@@ -1,0 +1,3713 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+html {
+  max-height: 100%;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+.loginBackground {
+  position: relative;
+  background-color: #FFA451;
+  height: 100%;
+  width: 100%;
+  /*padding: 0 170px;*/
+}
+.loginBackground .loginBackgroundOverlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/loginBackground.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.loginBackground .loginContainer {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.loginBackground .loginContainer .cookManSection {
+  position: relative;
+  text-align: left;
+  width: 50%;
+  padding-left: 50px;
+}
+.loginBackground .loginContainer .cookManSection img {
+  width: 100%;
+  max-width: 340px;
+    height: 498px;
+}
+.loginBackground .loginContainer .loginContents {
+  position: relative;
+  width: 50%;
+  display: flex;
+  /*justify-content: flex-end;*/
+}
+.loginBackground .loginContainer .loginContents form {
+  width: 100%;
+    max-width: 500px;
+    height: auto;
+    min-height: 600px;
+    background-color: #FFFFFF;
+    border-radius: 100px 100px 0 0;
+    box-shadow: 0px 5px 20px #00000029;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.loginBackground .loginContainer .loginContents form .loginLogo {
+  position: relative;
+  text-align: center;
+  margin-top: -30px;
+}
+.loginBackground .loginContainer .loginContents form .loginHeading {
+  position: relative;
+  padding: 30px 50px 20px 50px;
+}
+.loginBackground .loginContainer .loginContents form .loginHeading h2 {
+  color: #555555;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 0 0 15px 0;
+  padding: 0 0 15px 0;
+  position: relative;
+}
+.loginBackground .loginContainer .loginContents form .loginHeading h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #4d4d4d;
+}
+.loginBackground .loginContainer .loginContents form .formContents {
+  padding: 0 50px 30px 50px;
+  position: relative;
+}
+.loginBackground .loginContainer .loginContents form .formContents h3 {
+  font-size: 30px;
+    color: #FFA451;
+    letter-spacing: -0.07px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.loginBackground .loginContainer .loginContents form .formContents h4 {
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 30px;
+}
+.loginBackground .loginContainer .loginContents form .formContents .form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+.loginBackground .loginContainer .loginContents form .formContents .form-group input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: solid 1px #CFCFCF;
+  padding: 0 15px;
+  font-size: 18px;
+  transition: all 0.5s ease;
+}
+.loginBackground .loginContainer .loginContents form .formContents .form-group input:focus {
+  transition: all 0.5s ease;
+  border-color: #FFA451;
+  box-shadow: none;
+  outline: none;
+}
+.loginBackground .loginContainer .loginContents form .formContents .form-group label {
+  position: absolute;
+  cursor: text;
+  z-index: 2;
+  top: 13px;
+  left: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  background: #fff;
+  padding: 0 10px;
+  color: #999;
+  transition: all 0.5s ease;
+}
+.loginBackground .loginContainer .loginContents form .formContents .form-group input:focus + label,
+.loginBackground .loginContainer .loginContents form .formContents .form-group input:valid + label {
+  font-size: 12px;
+  top: -8px;
+}
+.loginBackground .loginContainer .loginContents form .formContents .form-group input:focus + label {
+  color: #FFA451;
+}
+.loginBackground .loginContainer .loginContents form .formContents .form-group.loginbuttonsSections {
+  margin-top: 46px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.loginBackground .loginContainer .loginContents form .formContents .form-group.loginbuttonsSections .forgotPasswordText {
+  position: relative;
+  font-size: 12px;
+  font-weight: 600;
+  color: #555555;
+  transition: all 0.5s ease;
+}
+.loginBackground .loginContainer .loginContents form .formContents .form-group.loginbuttonsSections .forgotPasswordText:hover {
+  color: #FFA451;
+  transition: all 0.5s ease;
+}
+.loginBackground .loginContainer .loginContents form .formContents .form-group.loginbuttonsSections .loginButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  background-color: #FFA451;
+  border-radius: 8px;
+  padding: 0px 15px;
+  height: 50px;
+  border: solid 1.5px #FFA451;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.loginBackground .loginContainer .loginContents form .formContents .form-group.loginbuttonsSections .loginButton svg {height: 12px;}
+.loginBackground .loginContainer .loginContents form .formContents .form-group.loginbuttonsSections .loginButton svg .a {
+  fill: #FFFFFF;
+  transition: all 0.5s ease;
+}
+.loginBackground .loginContainer .loginContents form .formContents .form-group.loginbuttonsSections .loginButton:hover {
+  border: solid 1.5px #FFA451;
+  background-color: transparent;
+  transition: all 0.5s ease;
+}
+.loginBackground .loginContainer .loginContents form .formContents .form-group.loginbuttonsSections .loginButton:hover svg .a {
+  fill: #FFA451;
+  transition: all 0.5s ease;
+}
+.loginBackground .loginContainer .loginContents form .dontHaveAccount {
+  text-align: center;
+  border-top: solid 1px #CCC;
+  padding: 10px;
+  margin-top: 8px;
+  left: 98px;
+  right: 0;
+  margin: 0 auto;
+  bottom: 0;
+  width: 500px;
+}
+.loginBackground .loginContainer .loginContents form .dontHaveAccount p {
+  margin: 0;
+  font-size: 12px;
+}
+.loginBackground .loginContainer .loginContents form .dontHaveAccount p a {
+  color: #FFA451;
+  text-transform: uppercase;
+}
+
+.outerSectionLayout {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  /* width */
+  /* Track */
+  /* Handle on hover */
+}
+.outerSectionLayout .leftSideSection {
+  position: fixed;
+  width: 100%;
+  max-width: 240px;
+  background: transparent linear-gradient(180deg, #FCAD65 0%, #FFA451 100%) 0% 0% no-repeat padding-box;
+  height: 100%;
+}
+.outerSectionLayout .leftSideSection .dashboardLogoSection {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  box-shadow: 0px 5px 20px #00000029;
+  background-color: #FFA451;
+  margin-bottom: 30px;
+}
+.outerSectionLayout .leftSideSection .dashboardLogoSection img {
+  width: 100%;
+  max-width: 141px;
+}
+.outerSectionLayout .leftSideSection .dashboardLogoSection .CookCap {
+  display: none;
+}
+.outerSectionLayout .leftSideSection .dashbaordMenu {
+  position: relative;
+  height: calc(100% - 180px);
+  overflow: auto;
+}
+.outerSectionLayout .leftSideSection .dashbaordMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.outerSectionLayout .leftSideSection .dashbaordMenu ul li {
+  position: relative;
+  margin-bottom: 5px;
+}
+.outerSectionLayout .leftSideSection .dashbaordMenu ul li:last-child {
+  margin-bottom: 0;
+}
+.outerSectionLayout .leftSideSection .dashbaordMenu ul li a {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 13px 0 13px 20px;
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+.outerSectionLayout .leftSideSection .dashbaordMenu ul li a:hover {
+  text-decoration: none;
+  transition: all 0.5s ease;
+  background-color: #EF7B13;
+}
+.outerSectionLayout .leftSideSection .dashbaordMenu ul li a img {
+  margin-right: 20px;
+}
+.outerSectionLayout .leftSideSection .dashbaordMenu ul li a.active {
+  background-color: #EF7B13;
+  transition: all 0.5s ease;
+}
+.outerSectionLayout .leftSideSection .logoutSection {
+  text-align: center;
+  position: relative;
+}
+.outerSectionLayout .leftSideSection .logoutSection a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  background-color: #FFFFFF;
+  padding: 4px 25px;
+  border-radius: 25px;
+  margin: 0 auto;
+  min-width: 80%;
+  height: 45px;
+  font-weight: 600;
+}
+.outerSectionLayout .leftSideSection .logoutSection a img {
+  margin-right: 15px;
+  width: 16px;
+}
+.outerSectionLayout .leftSideSection .logoutSection a span {
+  color: #4d4d4d;
+  font-size: 14px;
+}
+.outerSectionLayout .dashbaordMenu::-webkit-scrollbar {
+  width: 6px;
+}
+.outerSectionLayout .dashbaordMenu::-webkit-scrollbar-track {
+  background: #b1b1b1;
+}
+.outerSectionLayout .dashbaordMenu::-webkit-scrollbar-thumb:hover {
+  background: #4d4d4d;
+}
+.outerSectionLayout .rightSideSection {
+  position: relative;
+  margin-left: 240px;
+  width: calc(100% - 240px);
+  min-height: 100vh;
+  /* max-height: 100%; */
+  background-image: url("../images/dashbaordBackgourd.svg");
+  background-color: #F1F1F1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection {
+  width: 100%;
+  max-width: calc(100% - 240px);
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  background-color: #FFFFFF;
+  height: 90px;
+  box-shadow: 0px 5px 20px #00000029;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+@media (max-width: 767px) {
+  .outerSectionLayout .rightSideSection .dashbaordHeaderSection {
+    padding: 0 10px;
+  }
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderLeftside {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderLeftside .toggleButtons {
+  position: relative;
+  margin-right: 30px;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderLeftside .toggleButtons button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderLeftside .toggleButtons button svg {
+  width: 25px;
+  transition: all 0.5s ease;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderLeftside .toggleButtons button svg:hover .a .b {
+  fill: #FFA451;
+  transition: all 0.5s ease;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderLeftside .toggleButtons button:focus {
+  box-shadow: none;
+  outline: none;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderLeftside .headerSearchBox {
+  position: relative;
+  width: 250px;
+}
+@media (max-width: 767px) {
+  .outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderLeftside .headerSearchBox {
+    display: none;
+  }
+  
+  .loginBackground .loginContainer .cookManSection img {
+    display:none;
+}
+.loginBackground .loginContainer {
+    position: absolute;
+    display: block;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 145%;
+    height: 80%;
+}
+
+.loginContainer {
+margin: 70px;
+    
+}
+.loginBackground .loginContainer .loginContents form .dontHaveAccount p a {
+    color: #FFA451;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size:12px;
+}
+
+.loginBackground .loginContainer .loginContents form .dontHaveAccount p {
+    margin: 0 0 0 -135px;
+    font-size: 10px;
+}
+
+.loginBackground .loginContainer .loginContents {
+    position: relative;
+    width: 64%;
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    margin-left: -60px;
+}
+
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderLeftside .headerSearchBox form {
+  width: 100%;
+  position: relative;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderLeftside .headerSearchBox form svg {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 19px;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderLeftside .headerSearchBox form svg .a {
+  fill: #444341;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderLeftside .headerSearchBox form input {
+  width: 100%;
+  color: #FFA451;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 40px;
+  border: transparent solid 1px;
+  transition: all 0.5s ease;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderLeftside .headerSearchBox form input::placeholder {
+  color: #A7A8BC;
+  font-size: 14px;
+  font-weight: 600;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderLeftside .headerSearchBox form input:focus {
+  box-shadow: none;
+  outline: none;
+  transition: all 0.5s ease;
+  border: solid 1px #FFA451;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerAddMenuButton {
+  position: relative;
+  margin-right: 20px;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerAddMenuButton button {
+  display: flex;
+  align-items: center;
+  background-color: #FFA451;
+  border-radius: 6px;
+  padding: 12px 20px;
+  border: solid 1px transparent;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerAddMenuButton button svg {
+  margin-right: 12px;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerAddMenuButton button svg .a {
+  fill: #FFFFFF;
+  transition: all 0.5s ease;
+}
+@media (max-width: 480px) {
+  .outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerAddMenuButton button span {
+    display: none;
+  }
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerAddMenuButton button:focus {
+  box-shadow: none;
+  outline: none;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerAddMenuButton button:hover {
+  transition: all 0.5s ease;
+  border: solid 1px #FFA451;
+  color: #FFA451;
+  background-color: transparent;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerAddMenuButton button:hover svg .a {
+  fill: #FFA451;
+  transition: all 0.5s ease;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerNotitications {
+  position: relative;
+  margin-right: 20px;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerNotitications button {
+  background-color: #F3F6FA;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  position: relative;
+  padding: 12px 14px;
+  cursor: pointer;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerNotitications button img {
+  width: 20px;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerNotitications button span {
+  position: absolute;
+  left: auto;
+  right: 0;
+  top: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #FFA451;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerNotitications button:focus {
+  box-shadow: none;
+  outline: none;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerUserName {
+  position: relative;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerUserName button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerUserName button:focus {
+  box-shadow: none;
+  outline: none;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerUserName button .userImgSection {
+  position: relative;
+  width: 52px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 10px;
+  box-shadow: 0px 5px 20px #00000029;
+}
+@media (max-width: 1200px) {
+  .outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerUserName button .userImgSection {
+    border-radius: 50%;
+  }
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerUserName button .userImgSection img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerUserName button .userInformSection {
+  position: relative;
+  text-align: left;
+}
+@media (max-width: 1200px) {
+  .outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerUserName button .userInformSection {
+    display: none;
+  }
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerUserName button .userInformSection h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #555555;
+  margin: 0 0 -5px 0;
+}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerUserName button .userInformSection span {
+  color: rgba(68, 67, 65, 0.5);
+  font-size: 13px;
+  font-weight: 500;
+  padding-top: 6px;
+  display: block;
+}
+.outerSectionLayout .rightSideSection .dashbaordLayout {
+  padding: 120px 30px 30px 30px;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .outerSectionLayout .rightSideSection .dashbaordLayout {
+    padding: 120px 30px 0px 30px;
+  }
+}
+.outerSectionLayout .rightSideSection .dashbaordLayout .commonHeading {
+  position: relative;
+  margin-bottom: 20px;
+}
+.outerSectionLayout .rightSideSection .dashbaordLayout .commonHeading h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2F3443;
+  margin: 0;
+}
+.outerSectionLayout .rightSideSection .dashbaordLayout .dashboardCard {
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 140px;
+}
+@media (max-width: 1200px) {
+  .outerSectionLayout .rightSideSection .dashbaordLayout .dashboardCard {
+    margin-bottom: 30px;
+  }
+}
+.outerSectionLayout .rightSideSection .dashbaordLayout .dashboardCard .activeOrderSection {
+  position: relative;
+}
+.outerSectionLayout .rightSideSection .dashbaordLayout .dashboardCard .activeOrderSection h3 {
+  font-size: 40px;
+  margin: 0;
+  font-weight: 700;
+}
+.outerSectionLayout .rightSideSection .dashbaordLayout .dashboardCard .activeOrderSection p {
+  font-size: 14px;
+  margin: 0;
+  color: #2F3443;
+  font-weight: 600;
+}
+.outerSectionLayout .rightSideSection .dashbaordLayout .dashboardCard.acitveColorName {
+  border-top: 5px #BEE8FF solid;
+}
+.outerSectionLayout .rightSideSection .dashbaordLayout .dashboardCard.acitveColorName .activeOrderSection h3 {
+  color: #BEE8FF;
+}
+.outerSectionLayout .rightSideSection .dashbaordLayout .dashboardCard.upcomingOrderName {
+  border-top: 5px #FEDF7C solid;
+}
+.outerSectionLayout .rightSideSection .dashbaordLayout .dashboardCard.upcomingOrderName .activeOrderSection h3 {
+  color: #FEDF7C;
+}
+.outerSectionLayout .rightSideSection .dashbaordLayout .dashboardCard.penddingOrderName {
+  border-top: 5px #FCA896 solid;
+}
+.outerSectionLayout .rightSideSection .dashbaordLayout .dashboardCard.penddingOrderName .activeOrderSection h3 {
+  color: #FCA896;
+}
+.outerSectionLayout .rightSideSection .dashbaordLayout .dashboardCard.CompletedOrdersName {
+  border-top: 5px #7EDABF solid;
+}
+.outerSectionLayout .rightSideSection .dashbaordLayout .dashboardCard.CompletedOrdersName .activeOrderSection h3 {
+  color: #7EDABF;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions {
+  position: relative;
+  width: 100%;
+  padding: 0 30px;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection {
+  position: relative;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 20px;
+  margin-bottom: 30px;
+  height: 100%;
+  max-height: 330px;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .saleOverviewHeader {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .saleOverviewHeader h2 {
+  position: relative;
+  font-size: 18px;
+  color: #2F3443;
+  font-weight: bold;
+  margin: 0;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .saleOverviewHeader .saleOverveiwRightSide {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .saleOverviewHeader .saleOverveiwRightSide p {
+  margin: 0 10px 0 0;
+  font-size: 18px;
+  color: #2F3443;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .saleOverviewHeader .saleOverveiwRightSide p span {
+  color: #FFA451;
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .saleOverviewHeader .saleOverveiwRightSide select {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 30px;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .saleOverviewHeader .saleOverveiwRightSide a {
+  position: relative;
+  display: block;
+  margin-left: 20px;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .saleOverviewHeader .saleOverveiwRightSide a svg {
+  width: 30px;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .saleOverviewHeader .saleOverveiwRightSide a svg .a {
+  fill: #FFA451;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .saleOverviewBody {
+  position: relative;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .saleOverviewBody img {
+  width: 100%;
+  height: 100%;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .activeOrdertable {
+  position: relative;
+  width: 100%;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .activeOrdertable table {
+  width: 100%;
+  overflow-x: auto;
+  margin: 0;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .activeOrdertable table tr {
+  border: none;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .activeOrdertable table tr th {
+  border: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #CFCFCF;
+  font-weight: 500;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .activeOrdertable table tr td {
+  border: none;
+  vertical-align: middle  ;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .activeOrdertable table tr td button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .activeOrdertable table tr td .userNameImg {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .activeOrdertable table tr td .userNameImg img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .activeOrdertable table tr td .userNameImg p {
+  margin: 0;
+  display: flex;
+  align-items: initial;
+  flex-direction: column;
+  justify-content: left;
+  color: #FFA451;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  width: 110px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .activeOrdertable table tr td .userNameImg p span {
+  font-weight: 500;
+  font-size: 12px;
+  color: #555555;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .activeOrdertable table tr td .timingButtons {
+  background-color: #000000;
+  border-radius: 20px;
+  padding: 6px 10px;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .activeOrdertable table tr td .riderNameSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .activeOrdertable table tr td .riderNameSection p {
+  margin: 0;
+  white-space: nowrap;
+  width: 110px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  padding-right: 5px;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .activeOrdertable table tr td .riderNameSection svg {
+  width: 20px;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .activeOrdertable table tr td .riderNameSection svg .a {
+  fill: #4d4d4d;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .earningbodySection {
+  position: relative;
+  margin-top: 35px;
+  padding-bottom: 20px;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .earningbodySection .earningContentSection {
+  position: relative;
+  text-align: center;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .earningbodySection .earningContentSection .earningProfitSection {
+  position: relative;
+  width: 175px;
+  height: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .earningbodySection .earningContentSection .earningProfitSection .profiteCount {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .earningbodySection .earningContentSection .earningProfitSection .profiteCount h2 {
+  font-size: 18px;
+  color: #2F3443;
+  margin: 0;
+  font-weight: bold;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .earningbodySection .earningContentSection .earningProfitSection .profiteCount span {
+  font-size: 12px;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .earningbodySection .earningContentSection .earningProfitSection img {
+  width: 100%;
+  height: 100%;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .earningbodySection .earningContentSection h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2F3443;
+  margin: 20px 0 0 0;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .earningbodySection .earningWeekDetails {
+  position: relative;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .earningbodySection .earningWeekDetails ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .earningbodySection .earningWeekDetails ul li {
+  margin-bottom: 15px;
+  background: #F3F6FA;
+  padding: 10px 10px;
+  box-shadow: 0px 2px 6px #A29E8929;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  width: 100%;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .earningbodySection .earningWeekDetails ul li p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: bold;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .earningbodySection .earningWeekDetails ul li span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #7EDABF;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .earningbodySection .earningWeekDetails ul li:last-child {
+  margin-bottom: 0;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .statusOrderBody {
+  position: relative;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .statusOrderBody p {
+  color: #555555;
+  margin: 0;
+  font-size: 15px;
+  opacity: 0.6;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .statusOrderBody ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin: 20px 0 0 0;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .statusOrderBody ul li {
+  width: 100%;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 6px #A29E8929;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .statusOrderBody ul li:first-child {
+  background: #BEE8FF;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .statusOrderBody ul li:nth-child(2) {
+  background: #7EDABF;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .statusOrderBody ul li:last-child {
+  margin-bottom: 0;
+  background: #FEDF7C;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .statusOrderBody ul li p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 900;
+  color: #4d4d4d;
+  opacity: 1;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .statusOrderBody ul li span {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .statusOrderBody ul li span svg {
+  margin-left: 10px;
+  width: 18px;
+  cursor: pointer;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .statusOrderBody ul li span svg .a {
+  fill: #4d4d4d !important;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection.ActiveDeliveriesBox {
+  background-color: #555555;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection.ActiveDeliveriesBox .saleOverviewHeader {
+  margin: 0;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection.ActiveDeliveriesBox .saleOverviewHeader h2 {
+  color: #FFFFFF;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection.ActiveDeliveriesBox .saleOverviewHeader .saleOverveiwRightSide a svg {
+  width: 18px;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection.ActiveDeliveriesBox .saleOverviewHeader .saleOverveiwRightSide a svg .a {
+  fill: #FFFFFF;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection.ActiveDeliveriesBox .ActiveDeliveriesBody {
+  position: relative;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection.ActiveDeliveriesBox .ActiveDeliveriesBody p {
+  margin: 0;
+  color: #FFA451;
+  font-size: 40px;
+  font-weight: bold;
+}
+.outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection.ActiveDeliveriesBox .ActiveDeliveriesBody img {
+  width: 100%;
+  max-width: 210px;
+  margin-left: 30px;
+}
+
+.trackDevliveriesSections {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  padding: 120px 30px 30px 30px;
+}
+.trackDevliveriesSections h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2F3443;
+}
+.trackDevliveriesSections .devlieriesUserSection {
+  position: relative;
+  margin-top: 40px;
+}
+.trackDevliveriesSections .devlieriesUserSection .listOfUserDevlieries {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #FFFFFF;
+}
+.trackDevliveriesSections .devlieriesUserSection .listOfUserDevlieries .userContents {
+  position: relative;
+  width: 100%;
+  border-bottom: solid 1px #dedede;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.trackDevliveriesSections .devlieriesUserSection .listOfUserDevlieries .userContents:last-child {
+  border-bottom: none;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.trackDevliveriesSections .devlieriesUserSection .listOfUserDevlieries .userContents .headerUserContents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.trackDevliveriesSections .devlieriesUserSection .listOfUserDevlieries .userContents .headerUserContents .userImages {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.trackDevliveriesSections .devlieriesUserSection .listOfUserDevlieries .userContents .headerUserContents .userImages img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.trackDevliveriesSections .devlieriesUserSection .listOfUserDevlieries .userContents .headerUserContents .userImages .userNameSections {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.trackDevliveriesSections .devlieriesUserSection .listOfUserDevlieries .userContents .headerUserContents .userImages .userNameSections h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0 0 5px 0;
+}
+.trackDevliveriesSections .devlieriesUserSection .listOfUserDevlieries .userContents .headerUserContents .userImages .userNameSections span {
+  font-size: 12px;
+  color: #555555;
+}
+.trackDevliveriesSections .devlieriesUserSection .listOfUserDevlieries .userContents .headerUserContents .userImages .userNameSections span b {
+  font-weight: normal;
+  border-left: solid 1px #555555;
+  margin-left: 5px;
+  padding-left: 5px;
+}
+.trackDevliveriesSections .devlieriesUserSection .listOfUserDevlieries .userContents .headerUserContents button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.trackDevliveriesSections .devlieriesUserSection .listOfUserDevlieries .userContents .headerUserContents button:focus {
+  box-shadow: none;
+  outline: none;
+}
+.trackDevliveriesSections .devlieriesUserSection .listOfUserDevlieries .userContents .userLocations {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.trackDevliveriesSections .devlieriesUserSection .listOfUserDevlieries .userContents .userLocations img {
+  margin-right: 15px;
+}
+.trackDevliveriesSections .devlieriesUserSection .listOfUserDevlieries .userContents .userLocations button {
+  background-color: transparent;
+  border: none;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+.trackDevliveriesSections .devlieriesUserSection .listOfUserDevlieries .userContents .userLocations button:focus {
+  box-shadow: none;
+  outline: none;
+}
+.trackDevliveriesSections .devlieriesUserSection .listOfUserDevlieries .userContents .userLocations button img {
+  width: 26px;
+  cursor: pointer;
+}
+.trackDevliveriesSections .devlieriesUserSection .listOfUserDevlieries .userContents:hover {
+  transition: all 0.5s ease;
+}
+.trackDevliveriesSections .devlieriesUserSection .listOfUserDevlieries .userContents:hover .userLocations button {
+  opacity: 1;
+}
+.trackDevliveriesSections .devlieriesUserSection .devlieriesMapSections {
+  position: relative;
+  padding: 10px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  position: sticky;
+  top: 120px;
+  height: calc(100% - 330px);
+}
+.trackDevliveriesSections .devlieriesUserSection .devlieriesMapSections iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.trackDevliveriesSections .devlieriesUserSection .devlieriesMapSections .userInformOnMap {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 98%;
+}
+.trackDevliveriesSections .devlieriesUserSection .devlieriesMapSections .userInformOnMap .mapAddressSection {
+  background-color: #2F3443;
+  border-radius: 5px;
+  padding: 15px;
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.trackDevliveriesSections .devlieriesUserSection .devlieriesMapSections .userInformOnMap .mapAddressSection .mapAddressContent {
+  position: relative;
+}
+.trackDevliveriesSections .devlieriesUserSection .devlieriesMapSections .userInformOnMap .mapAddressSection .mapAddressContent p {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+.trackDevliveriesSections .devlieriesUserSection .devlieriesMapSections .userInformOnMap .mapAddressSection .mapAddressContent span {
+  font-size: 12px;
+  color: #FFFFFF;
+}
+.trackDevliveriesSections .devlieriesUserSection .devlieriesMapSections .userInformOnMap .mapAddressSection a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFA451;
+  border-radius: 5px;
+  width: 50px;
+  height: 40px;
+}
+.trackDevliveriesSections .devlieriesUserSection .devlieriesMapSections .userInformOnMap .mapAddressSection a svg .a {
+  fill: #FFFFFF;
+}
+.trackDevliveriesSections .devlieriesUserSection .devlieriesMapSections .userInformOnMap .mapUserInfo {
+  background-color: #2F3443;
+  border-radius: 5px;
+  padding: 15px;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.trackDevliveriesSections .devlieriesUserSection .devlieriesMapSections .userInformOnMap .mapUserInfo .userInfoMap {
+  display: flex;
+  align-items: center;
+}
+.trackDevliveriesSections .devlieriesUserSection .devlieriesMapSections .userInformOnMap .mapUserInfo .userInfoMap img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.trackDevliveriesSections .devlieriesUserSection .devlieriesMapSections .userInformOnMap .mapUserInfo .userInfoMap .rationgOnMap {
+  position: relative;
+}
+.trackDevliveriesSections .devlieriesUserSection .devlieriesMapSections .userInformOnMap .mapUserInfo .userInfoMap .rationgOnMap h5 {
+  color: #FFFFFF;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: 0;
+}
+.trackDevliveriesSections .devlieriesUserSection .devlieriesMapSections .userInformOnMap .mapUserInfo .userInfoMap .rationgOnMap ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.trackDevliveriesSections .devlieriesUserSection .devlieriesMapSections .userInformOnMap .mapUserInfo .userInfoMap .rationgOnMap ul li {
+  margin-right: 5px;
+  color: #FFFFFF;
+}
+.trackDevliveriesSections .devlieriesUserSection .devlieriesMapSections .userInformOnMap .mapUserInfo .userInfoMap .rationgOnMap ul li:first-child {
+  margin-right: 10px;
+}
+.trackDevliveriesSections .devlieriesUserSection .devlieriesMapSections .userInformOnMap .mapUserInfo .OnMapDevliery {
+  display: flex;
+  align-items: center;
+}
+.trackDevliveriesSections .devlieriesUserSection .devlieriesMapSections .userInformOnMap .mapUserInfo .OnMapDevliery img {
+  width: 100%;
+  max-width: 100px;
+  margin: -35px 40px 0 0px;
+}
+.trackDevliveriesSections .devlieriesUserSection .devlieriesMapSections .userInformOnMap .mapUserInfo .OnMapDevliery a {
+  border: none;
+  background-color: transparent;
+}
+.trackDevliveriesSections .devlieriesUserSection .devlieriesMapSections .userInformOnMap .mapUserInfo .OnMapDevliery a img {
+  width: 100%;
+  max-width: 40px;
+  margin: 0;
+}
+.trackDevliveriesSections .devlieriesUserSection .devlieriesMapSections .userInformOnMap .mapUserInfo .OnMapDevliery a:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.offerManagementWrap {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  padding: 120px 30px 10px 30px;
+}
+.offerManagementWrap .offermanageTopHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.offerManagementWrap .offermanageTopHeading h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2F3443;
+  margin-bottom: 20px;
+}
+.offerManagementWrap .offermanageTopHeading a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  background-color: #FFA451;
+  color: #FFFFFF;
+  border-radius: 8px;
+  padding: 8px 15px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.offerManagementWrap .offermanageTopHeading a:hover {
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+.offerManagementWrap .offermanageTopHeading a img {
+  width: 18px;
+  margin-right: 10px;
+}
+
+.managementTabSection {
+  position: relative;
+  width: 100%;
+  padding: 0 30px;
+}
+.managementTabSection .tabContentManagement {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  padding: 0 20px;
+  box-shadow: 0px 2px 19px rgb(162 158 137 / 16%);
+  border-radius: 10px;
+}
+.managementTabSection .tabContentManagement .managementFilterSection {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.managementTabSection .tabContentManagement .managementFilterSection button {
+  box-shadow: none;
+  background-color: #F3F6FA;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.managementTabSection .tabContentManagement .managementFilterSection button:hover {
+  box-shadow: none;
+  outline: none;
+}
+.managementTabSection .tabContentManagement .managementFilterSection form {
+  position: relative;
+}
+.managementTabSection .tabContentManagement .managementFilterSection form img {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+.managementTabSection .tabContentManagement .managementFilterSection form svg {
+  width: 26px;
+  position: absolute;
+  top: 12px;
+  left: 6px;
+}
+.managementTabSection .tabContentManagement .managementFilterSection form svg .a {
+  fill: #4d4d4d;
+}
+.managementTabSection .tabContentManagement .managementFilterSection form input {
+  background-color: #F3F6FA;
+  border: none;
+  outline: none;
+  height: 40px;
+  font-size: 14px;
+  padding: 10px 10px 10px 40px;
+  border-radius: 10px;
+}
+.managementTabSection .tabContentManagement ul.nav.nav-tabs {
+  margin: 0;
+}
+.managementTabSection .tabContentManagement ul.nav.nav-tabs li {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.managementTabSection .tabContentManagement ul.nav.nav-tabs li a {
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #A7A8BC;
+  padding: 23px 15px;
+  border-bottom: 4px solid transparent;
+}
+.managementTabSection .tabContentManagement ul.nav.nav-tabs li a.active {
+  border-bottom: solid 4px #FFA451;
+  color: #FFA451;
+  transition: all 0.3s ease-in-out;
+}
+.managementTabSection .managementOffersTabs {
+  position: relative;
+  width: 100%;
+  padding: 30px 0 0 0;
+}
+.managementTabSection .managementOffersTabs .managenmentOferContent {
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 2px 19px rgb(162 158 137 / 16%);
+  padding: 15px;
+  background-color: #FFFFFF;
+  margin-bottom: 30px;
+  transition: all 0.5s ease;
+}
+.managementTabSection .managementOffersTabs .managenmentOferContent:hover {
+  transition: all 0.5s ease;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+.managementTabSection .managementOffersTabs .managenmentOferContent .managenmentOferHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  margin-bottom: 40px;
+}
+.managementTabSection .managementOffersTabs .managenmentOferContent .managenmentOferHeader .getOfferSection {
+  position: relative;
+}
+.managementTabSection .managementOffersTabs .managenmentOferContent .managenmentOferHeader .getOfferSection h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+.managementTabSection .managementOffersTabs .managenmentOferContent .managenmentOferHeader .getOfferSection span {
+  font-size: 14px;
+  color: #A7A8BC;
+}
+.managementTabSection .managementOffersTabs .managenmentOferContent .managenmentOferHeader .offerCodeSection {
+  position: relative;
+}
+.managementTabSection .managementOffersTabs .managenmentOferContent .managenmentOferHeader .offerCodeSection p {
+  background-color: #BEE8FF;
+  color: #000;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 10px;
+}
+.managementTabSection .managementOffersTabs .managenmentOferContent .managementOfferBody {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.managementTabSection .managementOffersTabs .managenmentOferContent .managementOfferBody p {
+  margin: 0;
+  padding: 4px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #7EDABF;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.managementTabSection .managementOffersTabs .managenmentOferContent .managementOfferBody span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFA451;
+}
+.managementTabSection .managementOffersTabs .managenmentOferContent .managementOfferBody .useAgainSection {
+  color: #CE543D;
+  font-size: 14px;
+  text-transform: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.noMenuAddedSection {
+  position: relative;
+  padding: 120px 30px 30px 30px;
+  height: 100vh;
+  width: 100%;
+}
+.noMenuAddedSection h2 {
+  font-size: 24px;
+  color: #2F3443;
+  font-weight: bold;
+}
+.noMenuAddedSection .noMenuTabSection {
+  width: 100%;
+  height: calc(100% - 50px);
+  padding: 20px;
+  margin: 30px 0 0 0;
+}
+.noMenuAddedSection .noMenuTabSection .nav.nav-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.noMenuAddedSection .noMenuTabSection .nav.nav-tabs li {
+  border: none;
+  margin-right: 10px;
+}
+.noMenuAddedSection .noMenuTabSection .nav.nav-tabs li a {
+  border: none;
+  font-size: 18px;
+  color: #2F3443;
+  font-weight: 600;
+  opacity: 0.5;
+  padding: 6px 20px;
+  border-bottom: 3px solid transparent;
+}
+.noMenuAddedSection .noMenuTabSection .nav.nav-tabs li a.active {
+  border-bottom: solid 3px #7EDABF;
+  color: #7EDABF;
+}
+.noMenuAddedSection .noMenuTabSection .tab-content {
+  margin: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+.noMenuAddedSection .noMenuTabSection .tab-content .noMenuBodySection {
+  position: relative;
+  text-align: center;
+  margin-top: 60px;
+}
+.noMenuAddedSection .noMenuTabSection .tab-content h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.noMenuAddedSection .noMenuTabSection .tab-content p {
+  font-size: 14px;
+  color: #555555;
+  opacity: 0.6;
+  margin-bottom: 40px;
+}
+.noMenuAddedSection .noMenuTabSection .tab-content a {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 8px 25px;
+  color: #FFFFFF;
+  background-color: #FFA451;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 auto;
+  transition: all 0.5s ease;
+  border: solid 1px #FFA451;
+}
+.noMenuAddedSection .noMenuTabSection .tab-content a:hover {
+  color: #FFA451;
+  transition: all 0.5s ease;
+  background-color: transparent;
+  border: solid 1px #FFA451;
+  text-decoration: none;
+}
+
+.orderManagementCotents {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+.orderManagementCotents .contentOrderManagement {
+  position: relative;
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 19px rgb(162 158 137 / 16%);
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+.orderManagementCotents .contentOrderManagement:hover {
+  transition: all 0.5s ease;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+.orderManagementCotents .contentOrderManagement .OrderManagementHeader {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.orderManagementCotents .contentOrderManagement .OrderManagementHeader .orderImages {
+  position: relative;
+  display: flex;
+  align-content: center;
+}
+.orderManagementCotents .contentOrderManagement .OrderManagementHeader .orderImages img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.orderManagementCotents .contentOrderManagement .OrderManagementHeader .orderImages .userNameOrdermanagement {
+  position: relative;
+}
+.orderManagementCotents .contentOrderManagement .OrderManagementHeader .orderImages .userNameOrdermanagement h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color: #4d4d4d;
+  font-family: "Poppins", sans-serif;
+}
+.orderManagementCotents .contentOrderManagement .OrderManagementHeader .orderImages .userNameOrdermanagement span {
+  color: #555555;
+  opacity: 0.5;
+  font-size: 14px;
+}
+.orderManagementCotents .contentOrderManagement .OrderManagementHeader .orderImages .userNameOrdermanagement span b {
+  font-weight: normal;
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #ccc;
+}
+.orderManagementCotents .contentOrderManagement .OrderManagementHeader p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  color: #7EDABF;
+  font-family: "Poppins", sans-serif;
+}
+.orderManagementCotents .contentOrderManagement .orderBodyManagement {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.orderManagementCotents .contentOrderManagement .orderBodyManagement .weeklyPlanFood {
+  position: relative;
+}
+.orderManagementCotents .contentOrderManagement .orderBodyManagement .weeklyPlanFood span {
+  font-size: 14px;
+  color: #A7A8BC;
+}
+.orderManagementCotents .contentOrderManagement .orderBodyManagement .weeklyPlanFood .weeklyPlanbreakFast {
+  display: flex;
+  align-items: center;
+}
+.orderManagementCotents .contentOrderManagement .orderBodyManagement .weeklyPlanFood .weeklyPlanbreakFast img {
+  margin-right: 10px;
+}
+.orderManagementCotents .contentOrderManagement .orderBodyManagement .weeklyPlanFood .weeklyPlanbreakFast h5 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  color: #000000;
+}
+.orderManagementCotents .contentOrderManagement .orderManagementFooter {
+  position: relative;
+}
+.orderManagementCotents .contentOrderManagement .orderManagementFooter .orderManagementAddress {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.orderManagementCotents .contentOrderManagement .orderManagementFooter .orderManagementAddress img {
+  margin-right: 15px;
+}
+.orderManagementCotents .contentOrderManagement .orderManagementFooter .orderManagementAddress p {
+  color: #4d4d4d;
+  margin: 0;
+  font-size: 14px;
+}
+.orderManagementCotents .contentOrderManagement .orderManagementFooter .orderManagementAddress a svg {
+  width: 60px;
+}
+.orderManagementCotents .contentOrderManagement .orderManagementFooter .orderManagementAddress a svg .a {
+  fill: #FFA451;
+  stroke-width: 0px;
+}
+.orderManagementCotents .contentOrderManagement .orderManagementFooter .orderManagementOptionButton {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.orderManagementCotents .contentOrderManagement .orderManagementFooter .orderManagementOptionButton a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border: solid 1px transparent;
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin-right: 10px;
+  transition: all 0.5s ease;
+}
+.orderManagementCotents .contentOrderManagement .orderManagementFooter .orderManagementOptionButton a svg {
+  width: 18px;
+}
+.orderManagementCotents .contentOrderManagement .orderManagementFooter .orderManagementOptionButton a svg .a {
+  fill: #FFFFFF !important;
+}
+.orderManagementCotents .contentOrderManagement .orderManagementFooter .orderManagementOptionButton a:focus {
+  box-shadow: none;
+  outline: none;
+}
+.orderManagementCotents .contentOrderManagement .orderManagementFooter .orderManagementOptionButton a.rightCheckButton {
+  background-color: #7EDABF;
+}
+.orderManagementCotents .contentOrderManagement .orderManagementFooter .orderManagementOptionButton a.rightCheckButton:hover {
+  border: solid 1px #7EDABF;
+  transition: all 0.5s ease;
+}
+.orderManagementCotents .contentOrderManagement .orderManagementFooter .orderManagementOptionButton a.rightCheckButton:hover svg .a {
+  fill: #7EDABF;
+}
+.orderManagementCotents .contentOrderManagement .orderManagementFooter .orderManagementOptionButton a.closedMarkButton {
+  background-color: #FCA896;
+}
+.orderManagementCotents .contentOrderManagement .orderManagementFooter .orderManagementOptionButton a.ReadyToPickUpButotn {
+  color: #FFFFFF;
+  background-color: #000000;
+  margin-left: 25px;
+  padding: 8px 15px;
+}
+.orderManagementCotents .contentOrderManagement .orderManagementFooter .orderManagementOptionButton a.ReadyToPickUpButotn svg {
+  margin-left: 10px;
+}
+.orderManagementCotents .contentOrderManagement .orderManagementFooter .orderManagementOptionButton a.ReadyToPickUpButotn:hover {
+  text-decoration: none;
+}
+.orderManagementCotents .contentOrderManagement .orderManagementFooter .orderManagementOptionButton span {
+  color: #A7A8BC;
+}
+.orderManagementCotents .salesSummarySection {
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 0;
+  margin-bottom: 15px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.orderManagementCotents .salesSummarySection:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  transition: all 0.5s ease;
+}
+.orderManagementCotents .salesSummarySection img {
+  position: absolute;
+  left: auto;
+  right: 40px;
+  top: 30px;
+  bottom: auto;
+  margin: auto;
+}
+.orderManagementCotents .salesSummarySection .summaryContent {
+  position: relative;
+  margin-bottom: 40px;
+  width: 100%;
+  padding: 20px;
+}
+.orderManagementCotents .salesSummarySection .summaryContent span {
+  font-size: 14px;
+  color: #A7A8BC;
+  display: block;
+  margin: 0;
+}
+.orderManagementCotents .salesSummarySection .summaryContent h3 {
+  font-size: 16px;
+  color: #555555;
+  font-weight: bold;
+}
+.orderManagementCotents .salesSummarySection .summaryContent h3 img {
+  margin-left: 5px;
+  width: 18px;
+  position: relative;
+  right: inherit;
+  top: inherit;
+}
+.orderManagementCotents .salesSummarySection ul {
+  list-style: none;
+  padding: 0 0 0 20px;
+  margin: 0 0 20px 0;
+  display: flex;
+}
+.orderManagementCotents .salesSummarySection ul li {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.orderManagementCotents .salesSummarySection ul li p {
+  margin: 0;
+  font-size: 21px;
+  font-weight: bold;
+}
+.orderManagementCotents .salesSummarySection ul li span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555555;
+}
+.orderManagementCotents .salesSummarySection ul li:last-child {
+  margin-right: 0;
+}
+.orderManagementCotents .salesSummarySection ul li:last-child p {
+  color: #CE543D;
+}
+.orderManagementCotents .salesSummarySection ul li:nth-child(2) p {
+  color: #FEDF7C;
+}
+.orderManagementCotents .salesSummarySection ul li:first-child p {
+  color: #BEE8FF;
+}
+.orderManagementCotents .salesSummarySection .totalsalesSection {
+  background-color: #5E310E;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.orderManagementCotents .salesSummarySection .totalsalesSection img {
+  position: relative;
+  right: inherit;
+  top: inherit;
+  margin: 0;
+}
+.orderManagementCotents .salesSummarySection .totalsalesSection .salesTotalcontent {
+  text-align: right;
+}
+.orderManagementCotents .salesSummarySection .totalsalesSection .salesTotalcontent h4 {
+  color: #FFD2A8;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+.orderManagementCotents .salesSummarySection .totalsalesSection .salesTotalcontent span {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+}
+.orderManagementCotents .ProjectedTomorrowSection {
+  position: relative;
+  background-color: #FFFFFF;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-bottom: 5px solid #FFA451;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.orderManagementCotents .ProjectedTomorrowSection .TomorrowProjectContent {
+  position: relative;
+}
+.orderManagementCotents .ProjectedTomorrowSection .TomorrowProjectContent span {
+  font-size: 24px;
+  color: #FFA451;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.orderManagementCotents .ProjectedTomorrowSection .TomorrowProjectContent p {
+  font-size: 14px;
+  color: #555555;
+  margin: 0;
+}
+
+.orderManagementCotents.orderHistorySection {
+  margin: 0;
+}
+.orderManagementCotents.orderHistorySection .contentOrderManagement .orderManagementFooter .orderManagementOptionButton {
+  text-align: center;
+}
+.orderManagementCotents.orderHistorySection .contentOrderManagement .orderManagementFooter .orderManagementOptionButton span {
+  font-size: 12px;
+  color: #7EDABF;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.packageLunchSection {
+  position: relative;
+    background-color: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0px 2px 19px rgb(162 158 137 / 16%);
+    border-radius: 10px;
+}
+.packageLunchSection .lunchHeadingSection {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.packageLunchSection .lunchHeadingSection h2 {
+  font-size: 18px;
+  color: #2F3443;
+  margin: 0;
+}
+.packageLunchSection .lunchHeadingSection .foodNameSeciton {
+  position: relative;
+}
+.packageLunchSection .lunchHeadingSection .foodNameSeciton p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  color: #CE543D;
+  font-size: 14px;
+  font-weight: 600;
+}
+.packageLunchSection .lunchHeadingSection .foodNameSeciton p img {
+  margin-right: 5px;
+}
+
+.foodsTableSection {
+  position: relative;
+  width: 100%;
+}
+.foodsTableSection .table {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+}
+.foodsTableSection .table tr {
+  margin-bottom: 10px;
+}
+.foodsTableSection .table tr td {
+  border: none;
+  vertical-align: middle;
+}
+.foodsTableSection .table tr td .foodsDayName {
+  min-width: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.foodsTableSection .table tr td .foodsDayName p {
+  font-size: 16px;
+  font-weight: bold;
+}
+.foodsTableSection .table tr td:nth-child(2) p, .foodsTableSection .table tr td:nth-child(3) p {
+  background-color: #F1F1F1;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    height: 50px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.foodsTableSection .table tr td:nth-child(2) p {
+  color: #CE543D;
+}
+.foodsTableSection .table tr td a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #FFA451;
+}
+.foodsTableSection .table tr td a svg {
+  fill: #FFFFFF;
+  width: 20px;
+}
+.foodsTableSection .table tr td a:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.LunchTypeSection {
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 19px rgb(162 158 137 / 16%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.LunchTypeSection .typeLunchContent {
+  padding: 30px 20px;
+  background-color: #FCA896;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.LunchTypeSection .typeLunchContent p {
+  margin: 0;
+  color: #FFFFFF;
+}
+.LunchTypeSection .typeLunchContent p img {
+  margin-right: 7px;
+}
+.LunchTypeSection .LunchDateSection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.LunchTypeSection .LunchDateSection p {
+  margin: 0;
+  font-size: 14px;
+  color: #4d4d4d;
+}
+.LunchTypeSection .LunchDateSection p img {
+  margin-right: 6px;
+}
+
+.CreatePackageSection {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0px 2px 19px rgb(162 158 137 / 16%);
+    border-radius: 10px;
+}
+.CreatePackageSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.CreatePackageSection ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.CreatePackageSection ul li:first-child {
+  border-bottom: solid 1px #f1f1f1;
+}
+.CreatePackageSection ul li .weeklyPackage {
+  position: relative;
+}
+.CreatePackageSection ul li .weeklyPackage p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #7EDABF;
+}
+.CreatePackageSection ul li .weeklyPackage span {
+  font-size: 14px;
+  color: #4d4d4d;
+}
+.CreatePackageSection ul li .weeklyPricingSection {
+  position: relative;
+}
+.CreatePackageSection ul li .weeklyPricingSection h3 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFA451;
+  margin: 0;
+  margin-bottom: 5px;
+  max-width: 80%;
+}
+.CreatePackageSection ul li .weeklyPricingSection p {
+  background-color: #f1f1f1;
+  font-size: 18px;
+  margin: 0;
+  padding: 6px 10px;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+.CreatePackageSection ul li .weeklyPricingSection input {
+  background-color: #f1f1f1;
+  font-size: 18px;
+  margin: 0;
+  padding: 6px 10px;
+  font-weight: bold;
+  color: #4d4d4d;
+  height: 50px;
+  border-radius: 5px;
+  max-width: 80%;
+  border: 0;
+}
+.CreatePackageSection ul li .weeklyVariationSection {
+  position: relative;
+}
+.CreatePackageSection ul li .weeklyVariationSection span {
+  font-size: 14px;
+  color: #4d4d4d;
+}
+.CreatePackageSection ul li .weeklyVariationSection h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+.CreatePackageSection ul li img {
+  width: 100%;
+  max-width: 50%;
+}
+.CreatePackageSection ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  padding: 8px 20px;
+  color: #FFFFFF;
+  background-color: #000000;
+  border-radius: 25px;
+  font-size: 14px;
+  text-decoration: none;
+  height: 45px;
+}
+
+.foodsFooterImg {
+  position: relative;
+  margin: 0 -20px -20px -20px;
+}
+.foodsFooterImg img {
+  width: 100%;
+}
+
+.verticalTabSection {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+.verticalTabSection .tabVerticalContents {
+  position: relative;
+  border-radius: 10px;
+  background: #ffffff;
+  position: sticky;
+  top: 100px;
+  box-shadow: 0px 3px 6px rgba(162,158,137,0.16);
+}
+.verticalTabSection .tabVerticalContents span {
+  display: block;
+  font-size: 12px;
+  color: rgba(85, 85, 85, 0.3);
+  padding: 12px 20px;
+}
+.verticalTabSection .tabVerticalContents .nav.nav-pills {
+  position: relative;
+}
+.verticalTabSection .tabVerticalContents .nav.nav-pills .nav-item a {
+  padding: 12px 20px;
+  color: #555555;
+  font-size: 14px;
+  border-radius: 0;
+}
+.verticalTabSection .tabVerticalContents .nav.nav-pills .nav-item a.active {
+  background-color: #FCA896;
+  color: #FFFFFF;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.verticalTabSection .tabVerticalContents .nav.nav-pills .nav-item a.active::after {
+  content: '';
+  background: url(../images/v-tab-active-arrow.svg);
+  background-repeat: no-repeat;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.verticalTabSection .tab-content {
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0px 3px 6px rgba(162,158,137,0.16);
+}
+.verticalTabSection .tab-content .nav.nav-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-bottom: 1px solid rgba(167, 168, 188, 0.2);
+}
+.verticalTabSection .tab-content .nav.nav-tabs li {
+  border: none;
+}
+.verticalTabSection .tab-content .nav.nav-tabs li a {
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 5px solid transparent;
+  color: #2F3443;
+  opacity: 0.5;
+  border: none;
+  padding: 12px 25px 15px 25px;
+}
+.verticalTabSection .tab-content .nav.nav-tabs li a:hover {
+  border: none;
+}
+.verticalTabSection .tab-content .nav.nav-tabs li a.active {
+  border: none;
+  color: rgba(126, 218, 191, 1);
+  border-bottom: 3px solid rgba(126, 218, 191, 1);
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.verticalTabSection .tab-content .tab-content {
+  box-shadow: none;
+}
+.verticalTabSection .tab-content .tab-content .tab-pane {
+  border: none;
+  overflow-x: hidden;
+}
+.verticalTabSection .tab-content .tab-content .southIndiaBreakFastContent {
+  position: relative;
+}
+.verticalTabSection .tab-content .tab-content .southIndiaBreakFastContent .vegAndNon_veg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.verticalTabSection .tab-content .tab-content .southIndiaBreakFastContent .vegAndNon_veg span {
+  color: #7EDABF;
+  font-size: 14px;
+  font-weight: 600;
+}
+.verticalTabSection .tab-content .tab-content .southIndiaBreakFastContent .vegAndNon_veg span img {
+  margin-right: 5px;
+}
+.verticalTabSection .tab-content .tab-content .southIndiaBreakFastContent .table {
+  width: 100%;
+  overflow-x: auto;
+  position: relative;
+}
+.verticalTabSection .tab-content .tab-content .southIndiaBreakFastContent .table tr {
+  border: none;
+}
+.verticalTabSection .tab-content .tab-content .southIndiaBreakFastContent .table tr td {
+  border: none; vertical-align: middle;
+}
+.verticalTabSection .tab-content .tab-content .southIndiaBreakFastContent .table tr td p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #f1f1ff;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+.verticalTabSection .tab-content .tab-content .southIndiaBreakFastContent .table tr td:first-child {
+  width: 70px;
+}
+.verticalTabSection .tab-content .tab-content .southIndiaBreakFastContent .table tr td:nth-child(2) {
+  min-width: 180px;
+}
+.verticalTabSection .tab-content .tab-content .southIndiaBreakFastContent .table tr td:nth-child(2) p {
+  text-align: left;
+}
+.verticalTabSection .tab-content .tab-content .southIndiaBreakFastContent .table tr td .InStockButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 12px 25px;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+.verticalTabSection .tab-content .tab-content .southIndiaBreakFastContent .table tr td .InStockButton:focus {
+  box-shadow: none;
+  outline: none;
+}
+.verticalTabSection .tab-content .tab-content .southIndiaBreakFastContent .table tr td .orderbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 12px 20px;
+  background-color: #FFA451;
+  border-radius: 20px;
+}
+
+.southIndiaFooterButton {
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+.southIndiaFooterButton span {
+  font-size: 13px;
+  color: #BEE8FF;
+  margin-right: 20px;
+}
+.southIndiaFooterButton a {
+  font-size: 13px;
+  color: #BEE8FF;
+  margin-right: 20px;
+  text-decoration: none;
+}
+.southIndiaFooterButton button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 10px 30px;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+/* .southIndiaFooterButton a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 12px 25px;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+} */
+.southIndiaFooterButton a:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+body.collapseMenu .outerSectionLayout .leftSideSection {
+  max-width: 50px;
+}
+body.collapseMenu .outerSectionLayout .leftSideSection .dashboardLogoSection {
+  position: relative;
+  background: #fff;
+}
+body.collapseMenu .outerSectionLayout .leftSideSection .dashboardLogoSection .mainLogo {
+  display: none;
+}
+body.collapseMenu .outerSectionLayout .leftSideSection .dashboardLogoSection .CookCap {
+  display: block;
+  width: 40px;
+}
+body.collapseMenu .outerSectionLayout .leftSideSection .dashbaordMenu ul li a {
+  padding: 13px 0 13px 16px;
+}
+body.collapseMenu .outerSectionLayout .leftSideSection .dashbaordMenu ul li a span {
+  display: none;
+}
+body.collapseMenu .outerSectionLayout .leftSideSection .logoutSection a span {
+  display: none;
+}
+body.collapseMenu .outerSectionLayout .rightSideSection {
+  margin-left: 50px;
+  width: calc(100% - 50px);
+}
+body.collapseMenu .outerSectionLayout .rightSideSection .dashbaordHeaderSection {
+  max-width: calc(100% - 50px);
+}
+body.collapseMenu .outerSectionLayout .leftSideSection .logoutSection a img {
+  margin-right: 0;
+  width: 16px;
+}
+body.collapseMenu .outerSectionLayout .leftSideSection .logoutSection a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 25px;
+  margin: 0 auto;
+  min-width: 40px;
+  height: 40px;
+  font-weight: 600;
+}
+/*# sourceMappingURL=style.css.map */
+.verticalTabSection .tabVerticalContents .nav.nav-pills .nav-item:last-child a.active {
+  border-radius: 0 0 10px 10px;
+}
+.southIndiaBreakFastContent .upload-btn-wrapper {
+  position: relative;
+  /* overflow: hidden; */
+  display: inline-block;
+}
+
+.southIndiaBreakFastContent .btn {
+  border: 0;
+  background-color: rgba(167, 168, 188, 0.1);
+  border-radius: 8px;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+  padding-top: 4px;
+}
+
+.southIndiaBreakFastContent .upload-btn-wrapper input[type=file] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+}
+.southIndiaBreakFastContent .menu-input {
+  margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    height: 50px;
+    border: 0;
+}
+.southIndiaBreakFastContent .s-input {width: 150px;}
+.stock-radio {position: relative; z-index: 1;}
+.stock-radio [type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.stock-radio [type="checkbox"]:not(:checked) + label {
+  position: relative;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: rgba(85,85,85,0.3);
+  font-size: 14px;
+  min-width: 100px;
+  height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+.stock-radio [type="checkbox"]:checked + label {
+  position: relative;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: rgba(255,255,255,1);
+  font-size: 14px;
+  min-width: 100px;
+  height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+.stock-radio [type="checkbox"]:checked + label:before,
+.stock-radio [type="checkbox"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  background: rgba(241, 241, 241, 1);
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  z-index: -1;
+}
+.stock-radio [type="checkbox"]:checked + label:after,
+.stock-radio [type="checkbox"]:not(:checked) + label:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  background: rgba(0,0,0,1);
+  border: 1px solid rgba(0,0,0,1);
+  z-index: -1;;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.stock-radio [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.stock-radio [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.add-menu-row {
+  height: 45px;
+  width: 45px;
+  background: #EF7B13;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.southIndiaBreakFastContent .uploaded-img {border-radius: 8px; height: 45px; width: 45px; object-fit: cover;}
+.outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderLeftside .headerSearchBox form input {font-size: 14px;}
+  .outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderLeftside .headerSearchBox form svg {top: 8px;}
+  .outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerAddMenuButton button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+  .outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerNotitications button {padding: 8px 12px;}
+  .outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerNotitications button img {width: 16px;}
+  .outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerUserName button .userImgSection {width: 45px; height: 45px;}
+  .outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerUserName button .userInformSection h4 {
+    font-size: 14px;
+    color: #555555;
+  }
+  .outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerUserName button .userInformSection span {
+    color: rgba(68, 67, 65, 0.5);
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 6px;
+    display: block;
+  }
+  .outerSectionLayout .rightSideSection .dashbaordLayout .dashboardCard .activeOrderSection h3 {font-size: 36px;}
+  .outerSectionLayout .rightSideSection .dashbaordLayout .dashboardCard .activeOrderSection p {font-size: 12px;}
+  .outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .saleOverviewHeader h2 {font-size: 16px;}
+  .outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .saleOverviewHeader .saleOverveiwRightSide p {font-size: 14px;}
+  .outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .saleOverviewHeader .saleOverveiwRightSide p span {font-size: 16px;}
+  .outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .saleOverviewHeader .saleOverveiwRightSide a svg {width: 25px;}
+  .outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .activeOrdertable table tr th {font-size: 12px  ;}
+
+  .food-type {display: flex; justify-content: space-between; align-items: center;}
+  .food-type .veg {color: #7EDABF; margin-right: 10px;}
+  .food-type .veg img {height: 16px !important;}
+  .food-type .nonveg {color: #FCA896 !important;}
+  .food-type .nonveg img {height: 20px !important;}
+  .verticalTabSection .tab-content .meal-tab .nav.nav-tabs {border-bottom: 0; margin-top: 10px; padding-bottom: 10px;}
+  .tab-content .meal-tab .nav.nav-tabs li {margin-right: 5px;}
+  .tab-content .meal-tab .nav.nav-tabs li a {
+    height: 40px;
+    padding: 0;
+    width: 100px;
+    background: #ffffff;
+    border: solid 1px #FFA451;
+    color: #555555;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+  .tab-content .meal-tab .nav.nav-tabs li a:hover, .tab-content .meal-tab .nav.nav-tabs li a.active {
+    height: 40px;
+    padding: 0;
+    width: 65px;
+    background: #FFA451;
+    border: solid 1px #FFA451;
+    color: #ffffff;
+    border-radius: 30px;
+  }
+@media (min-width: 1600px) {
+  .southIndiaBreakFastContent .menu-input {width: 100% !important;}
+}
+@media (max-width:1440px) {
+  .outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderLeftside .headerSearchBox form input {font-size: 14px;}
+  .outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderLeftside .headerSearchBox form svg {top: 8px;}
+  .outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerAddMenuButton button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+  .outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerNotitications button {padding: 8px 12px;}
+  .outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerNotitications button img {width: 16px;}
+  .outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerUserName button .userImgSection {width: 47px;}
+  .outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerUserName button .userInformSection h4 {
+    font-size: 14px;
+    color: #555555;
+  }
+  .outerSectionLayout .rightSideSection .dashbaordHeaderSection .dashboardHeaderRightSide .headerUserName button .userInformSection span {
+    color: rgba(68, 67, 65, 0.5);
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 6px;
+    display: block;
+  }
+  .outerSectionLayout .rightSideSection .dashbaordLayout .dashboardCard .activeOrderSection h3 {font-size: 36px;}
+  .outerSectionLayout .rightSideSection .dashbaordLayout .dashboardCard .activeOrderSection p {font-size: 12px;}
+  .outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .saleOverviewHeader h2 {font-size: 16px;}
+  .outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .saleOverviewHeader .saleOverveiwRightSide p {font-size: 14px;}
+  .outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .saleOverviewHeader .saleOverveiwRightSide p span {font-size: 16px;}
+  .outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .saleOverviewHeader .saleOverveiwRightSide a svg {width: 25px;}
+  .outerSectionLayout .rightSideSection .dashboardOtherOptions .saleOverviewSection .activeOrdertable table tr th {font-size: 12px  ;}
+}
+
+.package-main {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  padding: 120px 30px 10px 30px;
+}
+.package-main .package-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.package-main .package-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2F3443;
+}
+.package-main .package-header a {
+  display: flex;
+    align-items: center;
+    background-color: #FFA451;
+    border-radius: 6px;
+    padding: 10px 15px;
+    border: solid 1px transparent;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.package-main .package-header a svg {
+  height: 18px;
+  width: 18px;
+  fill: #ffffff;
+  margin-right: 10px;
+}
+.package-main .package-header a:hover {
+  transition: all 0.5s ease;
+  border: solid 1px #FFA451;
+  color: #FFA451;
+  background-color: transparent;
+  text-decoration: none;
+}
+.package-main .package-header a:hover svg {fill: #FFA451;} 
+.package-main .package-body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.package-main .package-body .package-card {
+  position: relative;
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 19px rgb(162 158 137 / 16%);
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  flex: 1;
+  max-width: calc(33.33% - 15px);
+}
+.package-main .package-body .package-card .package-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.package-main .package-body .package-card .package-card-header h3 {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+.package-main .package-body .package-card .package-card-header h3 img {margin-right: 10px;}
+.package-main .package-body .package-card .package-card-header .package-edit {display: flex; align-items: center;}
+.package-main .package-body .package-card .package-card-header .package-edit a {margin: 0 0 0 15px;}
+.package-main .package-body .package-card .package-card-header .package-edit a svg {fill: #CE543D;}
+.package-main .package-body .package-card .package-subrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 20px 0;
+}
+.package-main .package-body .package-card .package-subrow .package-start-date {font-size: 14px; color: #555555;}
+.package-main .package-body .package-card .package-subrow .package-weekend {font-size: 14px; font-weight: 500; color: #ffa451;}
+.package-main .package-body .package-card .package-body-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.package-main .package-body .package-card .package-body-row .meal-type {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.package-main .package-body .package-card .package-body-row .meal-type img {margin-right: 10px;}
+.package-main .package-body .package-card .package-body-row .meal-type a {margin-left: 20px;}
+.package-main .package-body .package-card .package-body-row .cuising-type {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  color: #000000;
+}
+.package-main .package-body .package-card .package-footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.package-main .package-body .package-card .package-footer-row .weekly-package {
+  color: #7EDABF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 15px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.package-main .package-body .package-card .package-footer-row .weekly-package span {font-size: 14px; color: #555555;}
+.package-main .package-body .package-card .package-footer-row .monthly-package {
+  color: #7EDABF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 15px;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: right;
+}
+.package-main .package-body .package-card .package-footer-row .monthly-package span {font-size: 14px; color: #555555;}
+.custom-modal .modal-dialog {max-width: 55%;}
+.custom-modal .modal-dialog .modal-content {border-radius: 10px;}
+.custom-modal .modal-dialog .modal-content .modal-header .modal-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.custom-modal .modal-dialog .modal-content .modal-body {padding: 30px;}
+.custom-modal .modal-dialog .modal-content .modal-body .form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+  margin: 10px 15px;
+}
+.custom-modal .modal-dialog .modal-content .modal-body .form-group input {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #f1f1f1;
+  padding: 10px 20px;
+  border-radius: 5px;
+  height: 50px;
+  border: 0;
+  transition: all 0.3s ease-in-out;
+}
+.custom-modal .modal-dialog .modal-content .modal-body .calendar-custom span {position: absolute; left: 15px; bottom: 10px;}
+.custom-modal .modal-dialog .modal-content .modal-body .calendar-custom span svg {
+  width: 18px;
+  height: 18px;
+  fill: #909090;
+}
+.custom-modal .modal-dialog .modal-content .modal-body .form-group input:focus {border: 1px solid #EF7B13; transition: all 0.3s ease-in-out;}
+label.top-lbl {
+  font-size: 12px;
+  font-weight: 500;
+  color: #555555;
+}
+.package-radio {position: relative; z-index: 1; display: flex; justify-content: space-between;}
+.package-radio [type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.package-radio [type="radio"]:not(:checked) + label {
+  position: relative;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: rgba(85,85,85,0.6);
+  font-size: 13px;
+  font-weight: 600;
+  min-width: 100px;
+  height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    flex: 1;
+    max-width: calc(50% - 5px);
+}
+.package-radio [type="radio"]:checked + label {
+  position: relative;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: rgba(0,0,0,1);
+  font-size: 13px;
+  font-weight: 600;
+  min-width: 100px;
+  height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    flex: 1;
+    max-width: calc(50% - 5px);
+}
+.three-flex [type="radio"]:not(:checked) + label {max-width: calc(33.33% - 5px);}
+.three-flex [type="radio"]:checked + label {max-width: calc(33.33% - 5px);}
+.package-radio [type="radio"]:checked + label:before,
+.package-radio [type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  background: rgba(241, 241, 241, 1);
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  z-index: -1;
+}
+.package-radio [type="radio"]:checked + label:after,
+.package-radio [type="radio"]:not(:checked) + label:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  background: #FEDF7C;
+  border: 1px solid #FEDF7C;
+  z-index: -1;;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.package-radio [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.package-radio [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.package-radio [type="radio"]:checked + .nv-radio span {
+  width: 35px;
+  height: 35px;
+  background: url('../images/vegan-white.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 5px;
+  background-size: 70%;
+}
+.package-radio [type="radio"]:checked + label.nv-radio2 span {
+  width: 35px;
+  height: 35px;
+  background: url('../images/chicken-leg-white.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+.package-radio [type="radio"]:not(:checked) + label.nv-radio span {
+  width: 35px;
+  height: 35px;
+  background: url('../images/vegan-grey.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 5px;
+  background-size: 70%;
+}
+.package-radio [type="radio"]:not(:checked) + label.nv-radio2 span {
+  width: 35px;
+  height: 35px;
+  background: url('../images/chicken-leg-grey.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+
+.package-checkbox {position: relative; z-index: 1; display: flex; justify-content: space-between;}
+.package-checkbox [type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.package-checkbox [type="checkbox"]:not(:checked) + label {
+  position: relative;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: rgba(85,85,85,0.6);
+  font-size: 13px;
+  font-weight: 600;
+  min-width: 100px;
+  height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    flex: 1;
+    max-width: calc(50% - 5px);
+}
+.package-checkbox [type="checkbox"]:checked + label {
+  position: relative;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: rgba(255,255,255,1);
+  font-size: 13px;
+  font-weight: 600;
+  min-width: 100px;
+  height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    flex: 1;
+    max-width: calc(50% - 5px);
+}
+.package-checkbox [type="checkbox"]:checked + label:before,
+.package-checkbox [type="checkbox"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  background: rgba(241, 241, 241, 1);
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  z-index: -1;
+}
+.package-checkbox [type="checkbox"]:checked + label:after,
+.package-checkbox [type="checkbox"]:not(:checked) + label:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  background: #7EDABF;
+  border: 1px solid #7EDABF;
+  z-index: -1;;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.package-checkbox [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.package-checkbox [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.toggles .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggles .switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggles .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.toggles .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.toggles input:checked + .slider {
+  background-color: #FEDF7C;
+}
+
+.toggles input:focus + .slider {
+  box-shadow: 0 0 1px #FEDF7C;
+}
+
+.toggles input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.toggles .slider.round {
+  border-radius: 34px;
+}
+
+.toggles .slider.round:before {
+  border-radius: 50%;
+}
+.toggles .form-group {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggles .form-group .toggle-title {
+  font-size: 12px;
+    font-weight: 500;
+    color: #555555;
+}
+.toggles {margin: 20px 0;}
+.custom-modal .modal-dialog .modal-content .modal-body .form-button {
+  display: flex;
+  margin: 20px 0;
+  justify-content: flex-end;
+}
+.custom-modal .modal-dialog .modal-content .modal-body .form-button button {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: 0;
+}
+.custom-modal .modal-dialog .modal-content .modal-body .form-button button svg {
+  margin-left: 10px;
+  fill: #ffa451;
+}
+
+.foodsTableSection .upload-btn-wrapper {
+  position: relative;
+  /* overflow: hidden; */
+  display: inline-block;
+}
+
+.foodsTableSection .btn {
+  border: 0;
+  background-color: rgba(167, 168, 188, 0.1);
+  border-radius: 8px;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+  padding-top: 4px;
+}
+
+.foodsTableSection .upload-btn-wrapper input[type=file] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+}
+.foodsTableSection .menu-input {
+  margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    height: 50px;
+    border: 0;
+}
+.foodsTableSection .s-input {width: 150px;}
+
+#myDiv1 {
+  background: rgba(0, 0, 0, 0.4);
+  display:none;
+  text-align:justify;
+  position: fixed;
+  width: 100%;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: 99999;
+}
+#myDiv1 p {
+  margin: 15px;
+  font-size: 0.917em;
+}
+.set-menu-content {
+  width: 420px;
+  background: #ffffff;
+  border-radius: 30px 0 0 30px;
+  box-shadow: 0px 2px 19px rgb(162 158 137 / 16%);
+  height: 100%;
+  float: right;
+}
+.set-menu-content h3 {
+  font-size: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  color: #2F3443;
+}
+.menu-sec .styled-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+.menu-sec .styled-checkbox + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+}
+.menu-sec .styled-checkbox + label:before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 1px solid #a7a8bc;
+}
+.menu-sec .styled-checkbox:hover + label:before {
+  background: #7EDABF;
+}
+.menu-sec .styled-checkbox:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+.menu-sec .styled-checkbox:checked + label:before {
+  background: #7EDABF;
+}
+.menu-sec .styled-checkbox:disabled + label {
+  color: #b8b8b8;
+  cursor: auto;
+}
+.menu-sec .styled-checkbox:disabled + label:before {
+  box-shadow: none;
+  background: #ddd;
+}
+.menu-sec .styled-checkbox:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  transform: rotate(45deg);
+}
+.set-menu-content .menu-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 30px;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+.set-menu-content .menu-items .menu-sec {
+  flex: 1;
+  white-space: nowrap;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.set-menu-content .set-menu-body {display: flex; flex-direction: column; justify-content: space-between; height: calc(100vh - 105px);}
+.set-menu-content .set-menu-body .menu-items .menu-sec h4 {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.set-menu-content .set-menu-body .menu-footer {padding: 30px;}
+.set-menu-content .set-menu-body .menu-footer button {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: 0;
+}
+.set-menu-content .set-menu-body .menu-footer button img {margin-left: 10px;}
+
+.default-menu-items {position: relative; z-index: 1; display: flex; flex-wrap: wrap;}
+.default-menu-items [type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.default-menu-items [type="radio"]:not(:checked) + label {
+  position: relative;
+  cursor: pointer;
+  line-height: 20px;
+  color: rgba(85,85,85,0.6);
+  font-size: 12px;
+  font-weight: 600;
+  min-width: 100px;
+  height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+.default-menu-items [type="radio"]:checked + label {
+  position: relative;
+    cursor: pointer;
+    line-height: 20px;
+    color: rgba(255,255,255,1);
+    font-size: 12px;
+    font-weight: 600;
+    min-width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+.default-menu-items [type="radio"]:checked + label:before,
+.default-menu-items [type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  border-radius: 30px;
+  background: rgba(241, 241, 241, 1);
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  z-index: -1;
+}
+.default-menu-items [type="radio"]:checked + label:after,
+.default-menu-items [type="radio"]:not(:checked) + label:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  border-radius: 30px;
+  background: #7EDABF;
+  border: 1px solid #7EDABF;
+  z-index: -1;;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.default-menu-items [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.default-menu-items [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.set-menu-content .set-default-body {
+  padding: 30px;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+.set-menu-content .set-default-body .set-default-text h5 {
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.set-menu-content .set-default-body .set-default-text h5 span {
+  font-weight: 400;
+  margin-top: 10px;
+}
+.set-menu-content .set-default-body .default-title {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.set-menu-content .set-menu-body-2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: calc(100vh - 105px);
+}
+.set-menu-content .default-menu-footer {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.set-menu-content .default-menu-footer a {color: #BEE8FF; text-decoration: none; cursor: pointer;}
+.set-menu-content .default-menu-footer button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: 0;
+}
+.set-menu-content .default-menu-footer button img {margin-right: 10px; height: 15px;}
+.set-default-body .set-default-menu {margin-bottom: 20px;}
+.foodsDayName img {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.coupon-apply .three-flex [type="radio"]:not(:checked) + label {
+  max-width: calc(100px - 15px);
+}
+.coupon-apply .three-flex [type="radio"]:checked + label {
+  max-width: calc(100px - 15px);
+}
+.coupon-apply .package-radio [type="radio"]:not(:checked) + label {
+  min-width: unset;
+  width: auto;
+}
+.coupon-apply .package-radio [type="radio"]:checked + label {min-width: unset;}
+.form-sub-row {
+  display: flex;
+    justify-content: space-between;
+    flex: 1;
+    max-width: 46%;
+    margin: 10px 15px;
+}
+.form-sub-row .form-group {
+  max-width: 49%;
+  margin: 0 !important;
+}
+.form-sub-row .disc-val {
+  position: absolute;
+  bottom: 14px;
+  right: 15px;
+}
+.custom-select-disc {
+  margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #f1f1f1;
+    padding: 0;
+    border-radius: 5px;
+    height: 50px;
+    border: 0;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+.custom-select-disc::after {
+  content: "";
+	position: absolute;
+	top: 50%;
+	right: 13px;
+	width: 0;
+	height: 0;
+	margin-top: -2px;
+	border-top: 5px solid #aaa;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+}
+
+.custom-select-disc select {
+  -webkit-appearance: none;
+		-moz-appearance: none;
+	appearance: none;
+  background: none;
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: unset;
+  height: 100%;
+  line-height: inherit;
+}
+.custom-select-disc select:active, .custom-select-disc select:focus {
+	outline: none;
+	box-shadow: none;
+}
+.usage-limit {
+  display: flex;
+  justify-content: space-between;
+}
+.usage-limit input {max-width: 100px;}
+.usage-check .styled-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+.usage-check .styled-checkbox + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+}
+.usage-check .styled-checkbox + label:before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 1px solid #a7a8bc;
+}
+.usage-check .styled-checkbox:hover + label:before {
+  background: #7EDABF;
+}
+.usage-check .styled-checkbox:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+.usage-check .styled-checkbox:checked + label:before {
+  background: #7EDABF;
+}
+.usage-check .styled-checkbox:disabled + label {
+  color: #b8b8b8;
+  cursor: auto;
+}
+.usage-check .styled-checkbox:disabled + label:before {
+  box-shadow: none;
+  background: #ddd;
+}
+.usage-check .styled-checkbox:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  transform: rotate(45deg);
+}
+.reg-form-inner {max-height: 300px; overflow-y: auto; padding: 5px; padding-top: 10px;}
+.regformcontent {padding: 0 10px 10px 10px !important;}
+.step2 .form-row .form-group {flex: 1; max-width: calc(50% - 5px);}
+.step2 .form-row {justify-content: space-between;}
+.step2 .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  flex: 1;
+}
+
+.step2 .btn {
+  border: none;
+  color: #000000;
+  background-color: #f6f6f6;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  min-width: 150px;
+    height: 45px;
+}
+
+.step2 .upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+span.custom-lbl {
+  font-size: 14px;
+  font-weight: 500;
+  flex: 1;
+}
+.custom-form-row {align-items: center; position: relative; padding-bottom: 30px;}
+.imp-msg {
+  position: absolute;
+  font-size: 12px;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+.kitchen-payment .CreatePackageSection {margin-top: 0 !important;}
+.kitchen-payment .managementTabSection {padding: 0 30px 0 0 !important;}
+.kitchen-payment .CreatePackageSection ul li img {max-width: unset;}
+.kitchen-payment .CreatePackageSection ul li a {justify-content: center; width: 100%; text-align: center;}
+.kitchen-payment .red-note {color: #FCA896; font-size: 12px; text-align: center;}
+.t-card-footer {
+  padding: 20px;
+  background: #f4f7fa;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+span.t-price {
+  font-size: 24px;
+    font-weight: 600;
+    color: #7EDABF;
+}
+span.t-status {
+  color: #FFA451;
+}
+.wallet-history-table {
+  background-color: #FFFFFF;
+  padding: 20px;
+  box-shadow: 0px 2px 19px rgb(162 158 137 / 16%);
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+.wallet-history-table table {width: 100%;}
+.wallet-history-table table thead {background: #ffa451;}
+.wallet-history-table table thead th {padding: 15px; font-size: 14px; font-weight: 300; color: #ffffff;}
+.wallet-history-table table thead th:first-child {border-radius: 10px 0 0 0;}
+.wallet-history-table table thead th:last-child {border-radius: 0 10px 0 0;}
+.wallet-history-table table tbody td {padding: 15px; font-size: 14px; font-weight: 300; border-bottom: 1px solid #f4f7fa;}
+.wallet-history-table table tbody td:last-child {border-bottom: 0;}
+.pay-modal .modal-content {padding: 20px 30px;}
+.pay-modal .modal-body .form-group .form-control {
+  background: #f1f1f1;
+  border-radius: 5px;
+  height: 45px;
+}
+.pay-modal .modal-body .form-group label {font-size: 13px;}
+.pay-modal .modal-body .form-group span {
+  font-size: 24px;
+  font-weight: 600;
+  color: #7EDABF;
+}
+.pay-modal .modal-footer .btn.btn-primary {
+  background: #FFA451;
+  border-radius: 30px;
+  font-size: 14px;
+  width: 160px;
+  height: 50px;
+  border: 0;
+}
+.pay-modal .modal-footer button.btn.btn-secondary {
+  background: none;
+  color: #6c757d;
+  border: 0;
+  font-size: 14px;
+}
+
+
+/*Messages css starts here*/
+
+.inbox_people {
+  float: left;
+  overflow: hidden;
+  width: 30%;
+  border-right: 1px solid #c4c4c4;
+  height: 100%;
+}
+.inbox_msg {
+  clear: both;
+  overflow: hidden;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 2px 19px rgb(162 158 137 / 16%);
+}
+.top_spac{ margin: 20px 0 0;}
+
+
+.recent_heading {float: left; width:40%;}
+.srch_bar {
+  display: inline-block;
+  text-align: right;
+  width: 60%;
+}
+.headind_srch{
+  padding: 15px;
+    overflow: hidden;
+    border-bottom: 1px solid #c4c4c4;
+    display: flex;
+    align-items: center;
+}
+
+.recent_heading h4 {
+  color: #fea859;
+  font-size: 21px;
+  margin: auto;
+}
+.srch_bar input{ border:1px solid #cdcdcd; border-width:0 0 1px 0; width:80%; padding:2px 0 4px 6px; background:none;}
+.srch_bar .input-group-addon button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  padding: 0;
+  color: #707070;
+  font-size: 18px;
+}
+.srch_bar .input-group-addon { margin: 0 0 0 -27px;}
+
+.chat_ib h5{ font-size:15px; color:#464646; margin:0 0 8px 0;}
+.chat_ib h5 span{ font-size:13px; float:right;}
+.chat_ib p{ font-size:14px; color:#989898; margin:auto}
+.chat_img {
+  float: left;
+  width: 60px;
+}
+.chat_ib {
+  float: left;
+  padding: 0 0 0 15px;
+  width: 88%;
+}
+
+.chat_people{ overflow:hidden; clear:both; display: flex;}
+.chat_list {
+  border-bottom: 1px solid #f1f1f1;
+  margin: 0;
+  padding: 18px 16px 10px;
+}
+.inbox_chat { height: 90%; overflow-y: scroll;}
+
+.active_chat{ background:#ebebeb;}
+
+.incoming_msg_img {
+  display: inline-block;
+  width: 6%;
+}
+.received_msg {
+  display: inline-block;
+  padding: 0 0 0 10px;
+  vertical-align: top;
+  width: 92%;
+ }
+ .received_withd_msg p {
+  background: #f1f1f1 none repeat scroll 0 0;
+  border-radius: 3px 20PX 20px 20px;
+  color: #646464;
+  font-size: 14px;
+  margin: 0;
+  padding: 5px 10px 5px 12px;
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+}
+.time_date {
+  color: #747474;
+  display: block;
+  font-size: 12px;
+  margin: 8px 0 0;
+}
+.received_withd_msg { width: 57%;}
+.mesgs {
+  float: left;
+  padding: 30px 15px 0 25px;
+  width: 70%;
+  height: 100%;
+}
+
+ .sent_msg p {
+  background: #ef7b13 none repeat scroll 0 0;
+    border-radius: 20px 3px 20px 20px;
+    font-size: 14px;
+    margin: 0;
+    color: #fff;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+}
+.outgoing_msg{ overflow:hidden; margin:26px 0 26px;}
+.sent_msg {
+  float: right;
+  width: 46%;
+}
+.input_msg_write input {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  color: #4c4c4c;
+  font-size: 15px;
+  min-height: 48px;
+  width: 100%;
+}
+
+.type_msg {
+  border-top: 1px solid #c4c4c4;
+  position: relative;
+  height: 60px;
+  align-items: center;
+  display: flex;
+}
+.msg_send_btn {
+  background: #000000 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  height: 33px;
+  position: absolute;
+  right: 0;
+  top: 11px;
+  width: 33px;
+}
+.msg_send_btn img {height: 16px;}
+.messaging {
+  padding: 0;
+  height: calc(100% - 40px);
+  margin-top: 20px;
+}
+.msg_history {
+  height: calc(100% - 60px);
+  overflow-y: auto;
+}
+.chat_img img {
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+}
+.msg_history img {
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+}

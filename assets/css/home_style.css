@@ -1,0 +1,2080 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap');
+html,
+body {
+    height: 100%;
+    max-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F6F6F6;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.topHeaderSection {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topHeaderSection.deliverHeader {
+    background-color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.topHeaderSection .HeaderButtons {
+    position: relative;
+}
+
+.topHeaderSection .HeaderButtons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.topHeaderSection .HeaderButtons ul li {
+    margin: 0 0 0 30px;
+}
+
+@media(max-width: 460px) {
+    .topHeaderSection .HeaderButtons ul li:last-child {
+        display: none;
+    }
+}
+
+.topHeaderSection .HeaderButtons ul li .ShopingCart {
+    position: relative;
+}
+
+.topHeaderSection .HeaderButtons ul li .ShopingCart img {
+    width: 45px;
+}
+
+.topHeaderSection .HeaderButtons ul li .ShopingCart span {
+    position: absolute;
+    left: auto;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF045A;
+    font-size: 11px;
+    color: #FFF;
+    bottom: auto;
+    top: 20px;
+}
+
+.topHeaderSection .HeaderButtons ul li.dropdown button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.topHeaderSection .HeaderButtons ul li.dropdown button:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.topHeaderSection .HeaderButtons ul li.dropdown button span {
+    letter-spacing: 0px;
+    color: #2F3443;
+    margin-right: 15px;
+}
+
+.topHeaderSection .HeaderButtons ul li.dropdown button img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid 2px #FCC647;
+}
+
+.loginButton {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #FCC647;
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #FCC647;
+    color: #FFFFFF;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+.loginButton:hover {
+    cursor: pointer;
+    transition: all 0.5s ease;
+    background-color: transparent;
+    color: #FCC647;
+    text-decoration: none;
+    border: solid 1px #FCC647;
+}
+
+.signupButton {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #000000;
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+    background-color: transparent;
+    color: #000000;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+.signupButton:hover {
+    cursor: pointer;
+    transition: all 0.5s ease;
+    background-color: #FCC647;
+    color: #FFFFFF;
+    text-decoration: none;
+    border: solid 1px #FCC647;
+}
+
+.mainSection {
+    position: relative;
+}
+
+.mainSection .mainLeftsideImage {
+    position: absolute;
+    left: 0px;
+    top: -20px;
+}
+
+.mainSection .mainLeftsideImage img {
+    width: 100%;
+    max-width: 550px;
+}
+
+.mainTextContent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px 0 50px;
+}
+
+@media(max-width: 420px) {
+    .mainTextContent {
+        padding: 0 20px;
+    }
+}
+
+.mainTextContent h1 {
+    padding-top: 130px;
+    width: 100%;
+    max-width: 870px;
+    color: #2F3443;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 80px;
+    margin-bottom: 40px;
+}
+
+.locateMeSection {
+    position: relative;
+    background: #FFF;
+    padding: 10px;
+    border-radius: 80px;
+    width: 100%;
+    max-width: 850px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0.3rem 0.7rem rgb(0 0 0 / 15%);
+}
+
+.locateMeSection .locateMe_icon {
+    position: relative;
+    border-right: solid 1px #dadada;
+    line-height: 60px;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.locateMeSection .locateMe_icon img {
+    margin-right: 10px;
+}
+
+.locateMeSection .locateMe_icon span {
+    color: #CE543D;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.locateMeSection .SearchLocation {
+    position: relative;
+    width: calc(100% - 300px);
+}
+
+.locateMeSection .SearchLocation input {
+    width: 100%;
+    height: 60px;
+    border: none;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #2F3443;
+}
+
+.locateMeSection .SearchLocation input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.locateMeSection a,
+.locateMeSection button {
+    position: relative;
+    width: 160px;
+    height: 60px;
+    background: #FCC647;
+    border-radius: 50px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: solid 1.5px #FCC647;
+    transition: all 0.5s ease;
+}
+
+.locateMeSection a:hover,
+.locateMeSection button:hover {
+    transition: all 0.5s ease;
+    background: transparent;
+    color: #FCC647;
+    text-decoration: none;
+}
+
+.locateMeSection a:focus,
+.locateMeSection button:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.topFoodName {
+    position: relative;
+    margin-top: 60px;
+    padding-left: 50px;
+}
+
+@media(max-width: 420px) {
+    .topFoodName {
+        padding: 0 20px;
+    }
+}
+
+.topFoodName ul {
+    list-style: none;
+    padding: 0 0 0 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.topFoodName ul li {
+    margin-right: 30px;
+    position: relative;
+    width: 240px;
+    height: 190px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #d4d4d4;
+    box-shadow: 0 0.3rem 0.7rem rgb(0 0 0 / 15%);
+    transition: all 0.5s ease;
+}
+
+.topFoodName ul li img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+
+.topFoodName ul li:hover img {
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+
+.topFoodName ul li .NameOfFood {
+    position: absolute;
+    padding: 6px 10px;
+    border-radius: 5px;
+    width: 86%;
+    margin: auto;
+    bottom: 20px;
+    background: #FFF;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topFoodName ul li .NameOfFood span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2F3443;
+}
+
+.topFoodName ul li .NameOfFood a:hover {
+    text-decoration: none;
+}
+
+.mainSection .mainRightsideImage {
+    position: absolute;
+    left: auto;
+    right: -80px;
+    top: 90px;
+}
+
+.mainSection .mainRightsideImage img {
+    width: 100%;
+    max-width: 650px;
+}
+
+.whyChooseContent {
+    position: relative;
+    padding: 180px 0 60px 0;
+}
+
+.whyChooseContent_overlay {
+    content: '';
+    position: absolute;
+    left: auto;
+    right: -140px;
+    top: 100px;
+}
+
+.whyChooseContent .container,
+.paymentSystem .container,
+.groundWorkSection .container,
+footer .container,
+.MiniFooter .container {
+    max-width: 1300px;
+}
+
+.whyChooseContent .chooseLeftText {
+    position: relative;
+}
+
+.whyChooseContent .chooseLeftText h2 {
+    font-size: 36px;
+    color: #2F3443;
+    font-weight: 600;
+    width: 100%;
+    max-width: 550px;
+    margin-bottom: 40px;
+    padding-top: 30px;
+}
+
+.whyChooseContent .chooseLeftText p {
+    font-size: 16px;
+    color: #2F3443;
+    margin: 0;
+}
+
+.whyChooseContent .chooseRightContent {
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0.3rem 0.7rem rgb(0 0 0 / 15%);
+    padding: 20px 50px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 280px;
+    height: 210px;
+    transition: all 0.5s ease;
+}
+
+.whyChooseContent .chooseRightContent.secondboxContent {
+    margin-top: -30px;
+}
+
+.whyChooseContent .chooseRightContent:hover {
+    transition: all 0.5s ease;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+}
+
+.whyChooseContent .chooseRightContent img {
+    width: 100%;
+    max-width: 80px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+.whyChooseContent .chooseRightContent:hover img {
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+
+.whyChooseContent .chooseRightContent p {
+    text-align: center;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.paymentSystem {
+    position: relative;
+    padding: 30px 0 50px 0;
+}
+
+.paymentSystem .paymentCardBox {
+    text-align: center;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+    padding: 25px;
+}
+
+.paymentSystem .paymentCardBox:hover {
+    transition: all 0.5s ease;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    border-radius: 10px;
+}
+
+.paymentSystem .paymentCardBox img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 30px;
+}
+
+.paymentSystem .paymentCardBox h3 {
+    color: #2F3443;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.paymentSystem .paymentCardBox p {
+    margin: 0;
+    color: #2F3443;
+    font-size: 16px;
+}
+
+.groundWorkSection {
+    position: relative;
+    padding: 50px 0;
+}
+
+.groundWorkSection .groundWork_overlay {
+    position: absolute;
+    left: -80px;
+    top: 0;
+}
+
+.groundWorkSection .groundWork_overlay img {
+    width: 100%;
+    max-width: 350px;
+}
+
+.groundworkImg {
+    position: relative;
+    text-align: center;
+}
+
+.groundworkImg img {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-left: -150px;
+}
+
+.groundworkTextContent {
+    position: relative;
+    padding-top: 90px;
+}
+
+.groundworkTextContent h2 {
+    font-size: 35px;
+    color: #2F3443;
+    font-weight: 600;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 580px;
+}
+
+.groundworkTextContent p {
+    font-size: 16px;
+    color: #2F3443;
+    margin: 0;
+}
+
+.palyStorSection {
+    position: relative;
+    padding: 60px 0 0 0;
+}
+
+.palyStorSection .palyStorSection_overlay {
+    position: absolute;
+    left: auto;
+    right: 0;
+    bottom: 0;
+}
+
+.palyStorSection .playStorContents {
+    position: relative;
+}
+
+.palyStorSection .playStorContents h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #2F3443;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 450px;
+    line-height: 50px;
+    padding-top: 100px;
+}
+
+.palyStorSection .playStorContents p {
+    font-size: 16px;
+    color: #2F3443;
+    margin: 0;
+}
+
+.playStorButton {
+    margin-top: 40px;
+    display: flex;
+}
+
+.playStorButton .PlayStorIcon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.playStorButton .PlayStorIcon a {
+    margin-bottom: 20px;
+}
+
+.playStorButton .PlayStorIcon a img,
+.playStorButton a img {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.NoHungerMobile {
+    position: relative;
+    text-align: center;
+}
+
+.NoHungerMobile img {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+footer {
+    position: relative;
+    background: #2F3443;
+    padding: 60px 0;
+}
+
+footer .footerMenus {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+footer .footerMenus li {
+    width: 20%;
+}
+
+footer .footerMenus li h4 {
+    font-size: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+footer .footerMenus li ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footerMenus li ul li {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+footer .footerMenus li ul li a {
+    color: #FFFFFF;
+    opacity: 0.8;
+    transition: all 0.5s ease;
+    font-size: 14px;
+}
+
+footer .footerMenus li ul li a:hover {
+    transition: all 0.5s ease;
+    cursor: pointer;
+    color: #FCC647;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.MiniFooter {
+    position: relative;
+    background: #000000;
+    padding: 10px 0;
+}
+
+.MiniFooter .miniFooterContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.MiniFooter .miniFooterContent .footerLogo {
+    position: relative;
+}
+
+.MiniFooter .miniFooterContent .footerLogo img {
+    width: 100%;
+    max-width: 110px;
+}
+
+.MiniFooter .miniFooterContent .copyRightSection {
+    position: relative;
+}
+
+.MiniFooter .miniFooterContent .copyRightSection p {
+    margin: 0;
+    font-size: 14px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.MiniFooter .miniFooterContent ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.MiniFooter .miniFooterContent ul li {
+    margin: 0 0 0 20px;
+    position: relative;
+}
+
+.MiniFooter .miniFooterContent ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    color: #000000;
+    transition: all 0.5s ease;
+}
+
+.MiniFooter .miniFooterContent ul li a:hover {
+    text-decoration: none;
+    transition: all 0.5s ease;
+    background: #FCC647;
+    color: #FFFFFF;
+}
+
+.MiniFooter .miniFooterContent ul li a i {
+    font-size: 20px;
+}
+
+.deliveryMainSection {
+    position: relative;
+    background-image: url('../images/delivery_Header_BG.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 460px;
+}
+
+.deliveryMainSection .container-fluid {
+    padding: 0 140px;
+}
+
+.deliveryMainSection .deliveryInformation {
+    position: relative;
+}
+
+.deliveryMainSection .deliveryInformation h2 {
+    letter-spacing: 0px;
+    color: #2F3443;
+    font-family: 'Poppins', sans-serif;
+    font-size: 43px;
+    font-weight: bolder;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.deliveryMainSection .deliveryInformation h3 {
+    padding-left: 50px;
+    color: #2F3443;
+    font-size: 26px;
+    font-weight: bolder;
+    margin-bottom: 70px;
+}
+
+.deliveryMainSection .deliveryInformation h4 {
+    color: #2F3443;
+    font-size: 27px;
+    font-weight: bolder;
+    margin-bottom: 9px;
+}
+
+.deliveryMainSection .deliveryInformation h5 {
+    color: #2F3443;
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.deliveryMainSection .deliveryInformation p {
+    font-size: 26px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+}
+
+.deliveryMainSection .deliveryInformation svg {
+    margin-right: 10px;
+}
+
+.whatDoYouLikeSection {
+    position: relative;
+    padding: 40px 0;
+}
+
+.whatDoYouLikeSection .container-fluid {
+    padding: 0 140px;
+}
+
+.whatDoYouLikeSection .foodSelections h2 {
+    color: #2F3443;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+.whatDoYouLikeSection .foodSelections ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.whatDoYouLikeSection .foodSelections ul li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.whatDoYouLikeSection .foodSelections ul li:last-child {
+    margin-right: 0px;
+}
+
+.whatDoYouLikeSection .foodSelections ul li .inputHidden {
+    position: absolute;
+    left: -9999px;
+}
+
+.whatDoYouLikeSection .foodSelections ul li label {
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 8px #A29E8999;
+    border-radius: 34px;
+    display: flex;
+    align-items: center;
+    padding: 4px 30px 4px 15px;
+    cursor: pointer;
+}
+
+.whatDoYouLikeSection .foodSelections ul li label span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.whatDoYouLikeSection .foodSelections ul li label span svg,
+.whatDoYouLikeSection .foodSelections ul li label span img {
+    width: 25px;
+}
+
+.whatDoYouLikeSection .foodSelections ul li input[type=radio]:checked+label {
+    background: #7EDABF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 8px #03E57C57;
+    border-radius: 34px;
+    color: #FFFFFF;
+}
+
+.whatDoYouLikeSection .chooseFoodSection {
+    position: relative;
+    margin-left: 50px;
+}
+
+.whatDoYouLikeSection .chooseFoodSection ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.whatDoYouLikeSection .chooseFoodSection ul li {
+    margin-right: 80px;
+    position: relative;
+}
+
+.whatDoYouLikeSection .chooseFoodSection ul li:last-child {
+    margin-right: 0px;
+}
+
+.whatDoYouLikeSection .chooseFoodSection ul li .inputHidden {
+    position: absolute;
+    left: -9999px;
+}
+
+.whatDoYouLikeSection .chooseFoodSection ul li label {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 19px #A29E8929;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: inherit;
+    cursor: pointer;
+    width: 110px;
+    height: 170px;
+}
+
+.whatDoYouLikeSection .chooseFoodSection ul li label span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    margin-right: 10px;
+    margin: 10px auto 25px;
+}
+
+
+/* .whatDoYouLikeSection .chooseFoodSection ul li label span svg,
+.whatDoYouLikeSection .chooseFoodSection ul li label span img {
+    width: 25px;
+} */
+
+.whatDoYouLikeSection .chooseFoodSection ul li input[type=radio]:checked+label {
+    background: #FCC647 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 19px #E5C10399;
+    color: #FFFFFF;
+}
+
+.kitchensaroundsections {
+    margin-bottom: 50px;
+}
+
+.kitchensaroundsections .container-fluid {
+    padding: 0 140px;
+}
+
+.kitchensaroundsections .kitchen_left_heading span {
+    font-size: 26px;
+    font-weight: bolder;
+    color: #2F3443;
+}
+
+.kitchensaroundsections .kitchen_left_heading h2 {
+    font-size: 26px;
+    font-weight: 400;
+    color: #A7A8BC;
+    margin-bottom: 36px;
+}
+
+.kitchensaroundsections .filter_right_btn {
+    text-align: right;
+    margin-bottom: 36px;
+}
+
+.kitchensaroundsections .filter_right_btn button {
+    outline: unset;
+    border: unset;
+    background-color: transparent;
+}
+
+.kitchensaroundsections .filter_right_btn button image {
+    width: 49px;
+    height: 49px;
+}
+
+.kitchensaroundsections .kitchensmealtype label {
+    font-size: 16px;
+    color: #2F3443;
+    font-weight: bold;
+    display: block;
+}
+
+.kitchensaroundsections .kitchenscuisine select {
+    font-size: 14px;
+    border: none;
+    background-color: #FFFFFF;
+    width: 154px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.kitchensaroundsections .kitchenscuisine select:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.kitchensaroundsections .kitchenscuisine select.Cuisineselectbox {
+    padding: 0 20px 0 40px;
+}
+
+.kitchensaroundsections .kitchenscuisine label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2F3443;
+    position: relative;
+    display: block;
+}
+
+.kitchensaroundsections .kitchenscuisine select {
+    font: 14px;
+    border: none;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.kitchensaroundsections .kitchenscuisine img {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+}
+
+.kitchensaroundsections ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.kitchensaroundsections ul li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.kitchensaroundsections ul li:first-child {
+    width: 154px;
+}
+
+.kitchensaroundsections ul li:nth-child(2) {
+    width: 253px;
+}
+
+.kitchensaroundsections ul li:nth-child(3),
+.kitchensaroundsections ul li:nth-child(4),
+.kitchensaroundsections ul li:nth-child(5) {
+    width: 154px;
+}
+
+.kitchensaroundsections ul li:last-child {
+    margin-right: 0;
+}
+
+.foodsections .container-fluid {
+    padding: 0 140px;
+}
+
+.foodsections .listOfFoodSection {
+    width: 100%;
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    margin-bottom: 30px;
+}
+
+.foodsections .listOfFoodSection .foodSectionImg {
+    position: relative;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.foodsections .listOfFoodSection .foodSectionImg img.foodseleteddish {
+    width: 100%;
+    height: 220px;
+    transition: all 0.5s ease;
+}
+
+.foodsections .listOfFoodSection .foodSectionImg:hover img.foodseleteddish {
+    transition: all 0.5s ease;
+    transform: scale(1.2);
+}
+
+.foodsections .listOfFoodSection .foodSectionImg .foodrating {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.foodsections .listOfFoodSection .foodSectionImg .foodrating p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #A7A8BC;
+    font-size: 12px;
+    background-color: #FFFFFF;
+    padding: 2px 10px;
+    border-radius: 30px;
+}
+
+.foodsections .listOfFoodSection .foodSectionImg .foodrating p span {
+    color: #000000;
+    font-weight: 600;
+}
+
+.foodsections .listOfFoodSection .foodSectionImg .foodrating p i {
+    margin: 0 5px;
+    color: #FCC647;
+}
+
+.foodsections .listOfFoodSection .bookmarks {
+    position: absolute;
+    left: auto;
+    right: 20px;
+    top: 20px;
+    width: 26px;
+    height: 26px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.foodsections .listOfFoodSection .bookmarks img {
+    width: 10px;
+}
+
+.foodsections .listOfFoodSection .foodSectionImg span.discountSpan {
+    position: absolute;
+    left: auto;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #FCC647;
+    background-color: #2F3443;
+    padding: 3px 15px;
+    font-size: 10px;
+    color: #FCC647;
+    border-radius: 30px;
+}
+
+.foodsections .listOfFoodSection h3 {
+    font-size: 16px;
+    color: #2F3443;
+    font-weight: 600;
+    padding: 15px;
+    margin: 0;
+}
+
+.foodsections .listOfFoodSection .foodFooterSectio {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px 15px 15px;
+}
+
+.foodsections .listOfFoodSection .foodFooterSectio p {
+    margin: 0;
+    background-color: #A29E8929;
+    font-size: 14px;
+    color: #A7A8BC;
+    padding: 8px 20px;
+    border-radius: 30px;
+}
+
+.foodsections .listOfFoodSection .foodFooterSectio span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 14px;
+    color: #A7A8BC;
+}
+
+.foodsections .listOfFoodSection .foodFooterSectio span svg {
+    margin-right: 10px;
+    width: 20px;
+    fill: #FCA896;
+}
+
+.foodsections .foodsectionsloadmorebtn {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.foodsections .foodsectionsloadmorebtn a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: solid 2px #000000;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+}
+
+.foodsections .foodsectionsloadmorebtn a:hover {
+    background-color: #FCC647;
+    color: #FFFFFF;
+    border-color: #FCC647;
+    transition: all 0.5s ease;
+}
+
+.loginPopup {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #FCC647;
+    padding-top: 60px;
+}
+
+.loginPopup .PopupClosedButton {
+    position: absolute;
+    left: auto;
+    right: 20px;
+    top: 20px;
+}
+
+.loginPopup .PopupClosedButton button {
+    background-color: transparent;
+    border: none;
+}
+
+.loginPopup .PopupClosedButton button:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.LoginContentWrap {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    margin: 0px auto 0;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    border-radius: 100px 100px 0 0;
+}
+
+.LoginContentWrap .LoginLogo {
+    text-align: center;
+    margin: -25px auto 0;
+}
+
+.LoginContentWrap .FormHeadingSection {
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.LoginContentWrap .FormHeadingSection h2 {
+    font-size: 20px;
+    color: #555555;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    position: relative;
+    font-weight: 600;
+}
+
+.LoginContentWrap .FormHeadingSection h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #555555;
+    height: 2px;
+    width: 40px;
+}
+
+.LoginContentWrap .FormHeadingSection .sliderNumber {
+    position: relative;
+}
+
+.LoginContentWrap .FormHeadingSection .sliderNumber p {
+    margin: 0;
+    letter-spacing: 0px;
+    color: #CFCFCF;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.LoginContentWrap .FormHeadingSection .sliderNumber p span {
+    color: #555555;
+}
+
+.LoginContentWrap form {
+    position: relative;
+    padding: 0 40px;
+    height: calc(100% - 112px);
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.LoginContentWrap form::-webkit-scrollbar {
+    width: 6px;
+}
+
+.LoginContentWrap form::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.LoginContentWrap form::-webkit-scrollbar-thumb {
+    background-color: #eee;
+}
+
+.LoginContentWrap form h4 {
+    letter-spacing: -0.07px;
+    color: #FFA451;
+    font-size: 36px;
+    font-weight: 200;
+    margin-bottom: 25px;
+}
+
+.LoginContentWrap form .inputLabel {
+    position: relative;
+    width: 100%;
+}
+
+.LoginContentWrap form .inputLabel input {
+    box-shadow: none;
+    outline: none;
+    width: 100%;
+    border: 1px solid #CFCFCF;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    height: 50px;
+    padding: 5px 10px;
+}
+
+.LoginContentWrap form .inputLabel input:focus {
+    box-shadow: none;
+    outline: none;
+    border: solid 1px #FCC647;
+}
+
+.LoginContentWrap form .inputLabel .placeholderContent {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    padding: 0px 4px;
+    color: #000;
+    transform-origin: top left;
+    transition: all 0.5s ease;
+}
+
+.LoginContentWrap form .inputLabel input:focus+.placeholderContent,
+.LoginContentWrap form .inputLabel input:not(:placeholder-shown)+.placeholderContent {
+    top: -12px;
+    font-size: 16px;
+    color: #CFCFCF;
+    font-weight: 200;
+    background-color: #fff;
+}
+
+.loginButtonSection {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+
+.loginButtonSection a {
+    width: 100%;
+    box-shadow: 0px 3px 8px #00000029;
+    border-radius: 30px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+}
+
+.loginButtonSection a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.loginButtonSection a:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.loginButtonSection a.sendOTPButton {
+    background: #FCC647 0% 0% no-repeat padding-box;
+}
+
+.loginButtonSection a.continueWithEmail {
+    background: #2F3443 0% 0% no-repeat padding-box;
+}
+
+.loginButtonSection span {
+    display: block;
+    margin: 16px 0;
+}
+
+.socialMediaIcon {
+    padding: 20px;
+    position: relative;
+}
+
+.socialMediaIcon ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialMediaIcon ul li {
+    margin: 0 20px;
+}
+
+.socialMediaIcon ul li a {
+    outline: none;
+    cursor: pointer;
+}
+
+.socialMediaIcon ul li a img {
+    width: 30px;
+}
+
+.IfUserNotRegister {
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.IfUserNotRegister p {
+    margin: 0;
+    font-size: 12px;
+    color: #555555;
+}
+
+.IfUserNotRegister p a {
+    color: #FCC647;
+    outline: none;
+    font-weight: 600;
+}
+
+.IfUserNotRegister p a:hover {
+    text-decoration: none;
+}
+
+.OPTSectionBox {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px 0 60px 0;
+}
+
+.OPTSectionBox input {
+    width: 60px;
+    height: 60px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #CFCFCF;
+    border-radius: 5px;
+    font-size: 26px;
+    color: #FCC647;
+    text-align: center;
+}
+
+.OPTSectionBox input:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: #FCC647;
+}
+
+.OTPreSendButton {
+    text-align: center;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.OTPreSendButton a {
+    font-size: 22px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.OTPreSendButton a:hover {
+    text-decoration: none;
+}
+
+.IfUserNotRegister.backScreen {
+    text-align: left;
+    position: relative;
+}
+
+.IfUserNotRegister.backScreen a {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.IfUserNotRegister.backScreen a:hover {
+    text-decoration: none;
+}
+
+.IfUserNotRegister.backScreen a img {
+    transform: rotate(180deg);
+    margin-right: 5px;
+}
+
+.whereAreYouFrom {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.whereAreYouFrom h2 {
+    letter-spacing: -0.07px;
+    color: #000000;
+    font-size: 36px;
+    font-weight: 200;
+    margin: 0;
+}
+
+.whereAreYouFrom span {
+    color: #CFCFCF;
+    opacity: 1;
+    font-size: 16px;
+}
+
+.chooseAnyOneSection {
+    position: relative;
+}
+
+.chooseAnyOneSection ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chooseAnyOneSection ul li {
+    width: 27%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.chooseAnyOneSection ul li input {
+    position: absolute;
+    z-index: -9999999;
+}
+
+.chooseAnyOneSection ul li label {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.chooseAnyOneSection ul li label span {
+    border: solid 1px #d4d4d4;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+    height: 100px;
+}
+
+.chooseAnyOneSection ul li label span svg,
+.chooseAnyOneSection ul li label span img {
+    width: 60px;
+    height: 85px;
+    margin: 13px 0px 0 0;
+}
+
+.chooseAnyOneSection ul li input[type="radio"]:checked+label span {
+    border: solid 1px #FCC647;
+}
+
+.chooseAnyOneSection ul li label b {
+    color: #555555;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.chooseAnyOneSection ul li input[type="radio"]:checked+label b {
+    color: #FCC647;
+}
+
+.chooseAnyOneSection .GotoNextSetp a,
+.GotoNextSetp a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FCC647;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    width: 90px;
+    height: 50px;
+    border-radius: 30px;
+    float: right;
+    margin: 50px 0 0 0;
+}
+
+.WhereAreYouSingup {
+    margin-top: -50px;
+    border-top: solid 1px #dadada;
+    position: relative;
+    padding: 10px 0;
+}
+
+.WhereAreYouSingup p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    color: #555555;
+}
+
+.WhereAreYouSingup p a {
+    color: #FCC647;
+    font-weight: bold;
+}
+
+.WhereAreYouSingup p a:hover {
+    text-decoration: none;
+}
+
+.ByContinuing {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    align-items: inherit;
+}
+
+.ByContinuing input {
+    margin-right: 15px;
+}
+
+.ByContinuing input[type="checkbox"] {
+    display: none;
+}
+
+.ByContinuing input[type="checkbox"]+label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #000000;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.ByContinuing input[type="checkbox"]+label:last-child {
+    margin-bottom: 0;
+}
+
+.ByContinuing input[type="checkbox"]+label:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #6cc0e5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .6;
+    -webkit-transition: all .12s, border-color .08s;
+    transition: all .12s, border-color .08s;
+}
+
+.ByContinuing input[type="checkbox"]:checked+label:before {
+    width: 10px;
+    top: -5px;
+    left: 5px;
+    border-radius: 0;
+    opacity: 1;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.WrapcustomCheckBox {
+    position: relative;
+    margin-top: 20px;
+}
+
+.WrapcustomCheckBox p {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.WrapcustomCheckBox ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.WrapcustomCheckBox ul li {
+    margin-right: 20px;
+}
+
+.WrapcustomCheckBox ul li:last-child {
+    margin-right: 0;
+}
+
+.WrapcustomCheckBox ul li input[type="radio"]:checked,
+.WrapcustomCheckBox ul li input[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.WrapcustomCheckBox ul li input[type="radio"]:checked+label,
+.WrapcustomCheckBox ul li input[type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+
+.WrapcustomCheckBox ul li input[type="radio"]:checked+label:before,
+.WrapcustomCheckBox ul li input[type="radio"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #7edabf;
+    border-radius: 100%;
+    background: #fff;
+}
+
+.WrapcustomCheckBox ul li input[type="radio"]:checked+label:after,
+.WrapcustomCheckBox ul li input[type="radio"]:not(:checked)+label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #7edabf;
+    position: absolute;
+    top: 3px;
+    left: 3.2px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.WrapcustomCheckBox ul li input[type="radio"]:not(:checked)+label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.WrapcustomCheckBox ul li input[type="radio"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.licenseUploadSection {
+    position: relative;
+}
+
+.licenseUploadSection ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.licenseUploadSection ul li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.licenseUploadSection ul li p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.licenseUploadSection ul li span {
+    position: relative;
+    text-align: center;
+    width: 140px;
+}
+
+.licenseUploadSection ul li span b {
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    width: 100%;
+    background: #f6f6f6;
+    cursor: pointer;
+    color: #000;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.licenseUploadSection ul li span input {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.successSection {
+    position: relative;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.successSection img {
+    margin: 60px auto;
+}
+
+.successSection h4 {
+    color: #555555;
+    font-size: 20px;
+    width: 100%;
+    max-width: 262px;
+    font-weight: 600;
+    margin: 0 auto 40px;
+}
+
+.successSection p {
+    color: #000000;
+    margin: 0 auto 50px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.successSection a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 60px;
+    padding: 12px 25px;
+    background-color: #FCC647;
+    margin: 0 auto;
+    border-radius: 40px;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media(max-width: 1370px) {
+    .mainSection .mainRightsideImage {
+        right: -230px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .mainSection .mainRightsideImage,
+    .whyChooseContent_overlay {
+        display: none;
+    }
+    .whyChooseContent .container,
+    .paymentSystem .container,
+    .groundWorkSection .container,
+    footer .container,
+    .MiniFooter .container,
+    .palyStorSection .container {
+        padding: 0 30px;
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 1025px) {
+    .whyChooseContent .chooseLeftText {
+        margin-bottom: 40px;
+    }
+    .whyChooseContent .chooseRightContent {
+        margin: 20px auto 20px;
+    }
+    .whyChooseContent {
+        padding: 60px 0;
+    }
+    .groundworkImg img {
+        margin-left: 0;
+    }
+    .removeBreakTag {
+        display: none;
+    }
+    .deliveryMainSection .deliveryInformation h2 {
+        margin-bottom: 30px;
+    }
+    .deliveryMainSection .deliveryInformation h3 {
+        padding-left: 30px;
+        margin-bottom: 30px;
+    }
+    .whatDoYouLikeSection .chooseFoodSection {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .deliveryMainSection .container-fluid,
+    .whatDoYouLikeSection .container-fluid,
+    .kitchensaroundsections .container-fluid,
+    .foodsections .container-fluid {
+        padding: 0 30px;
+    }
+}
+
+@media(max-width: 992px) {
+    footer .footerMenus li {
+        width: 30%;
+    }
+    footer .footerMenus li ul {
+        margin-bottom: 40px;
+    }
+    .kitchensaroundsections ul {
+        flex-wrap: wrap;
+    }
+    .kitchensaroundsections ul li:first-child,
+    .kitchensaroundsections ul li:nth-child(2),
+    .kitchensaroundsections ul li:nth-child(3),
+    .kitchensaroundsections ul li:nth-child(4),
+    .kitchensaroundsections ul li:nth-child(5) {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 767px) {
+    .mainTextContent h1 {
+        padding-top: 100px;
+        width: 100%;
+        max-width: 100%;
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+    .loginButton,
+    .signupButton {
+        box-shadow: 0 0.3rem 0.7rem rgb(0 0 0 / 15%);
+        width: 80px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .whyChooseContent .chooseRightContent {
+        margin: 0 auto 20px !important;
+    }
+    .palyStorSection {
+        padding: 30ox 0 0 0;
+    }
+    .palyStorSection .playStorContents h2 {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 100%;
+        line-height: 40px;
+        padding-top: 0;
+    }
+    .playStorButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .whyChooseContent .chooseLeftText h2,
+    .groundworkTextContent h2,
+    .palyStorSection .playStorContents h2 {
+        font-size: 25px;
+    }
+    .topHeaderSection {
+        padding: 10px 15px;
+    }
+    .locateMeSection {
+        flex-direction: column;
+        height: auto;
+        border-radius: 10px;
+    }
+    .locateMeSection a,
+    .locateMeSection button {
+        height: 60px;
+        margin-top: 20px;
+    }
+    .locateMeSection .locateMe_icon {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: none;
+        border-bottom: solid 1px #dadada;
+    }
+    .locateMeSection .SearchLocation {
+        width: 100%;
+    }
+    .locateMeSection .SearchLocation input {
+        height: 60px;
+    }
+    .topFoodName ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .topFoodName ul li {
+        margin-bottom: 30px;
+    }
+    footer .footerMenus li {
+        width: 50%;
+    }
+    .MiniFooter .miniFooterContent {
+        flex-direction: column;
+    }
+    .MiniFooter .miniFooterContent .footerLogo,
+    .MiniFooter .miniFooterContent .copyRightSection {
+        margin-bottom: 20px;
+    }
+    .kitchensaroundsections ul li:first-child,
+    .kitchensaroundsections ul li:nth-child(2),
+    .kitchensaroundsections ul li:nth-child(3),
+    .kitchensaroundsections ul li:nth-child(4),
+    .kitchensaroundsections ul li:nth-child(5) {
+        width: 100%;
+    }
+    .whatDoYouLikeSection .foodSelections ul,
+    .whatDoYouLikeSection .chooseFoodSection ul {
+        flex-wrap: wrap;
+    }
+    .whatDoYouLikeSection .foodSelections ul li {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    .whatDoYouLikeSection .chooseFoodSection ul li {
+        width: 33%;
+        margin: 0;
+    }
+    .whatDoYouLikeSection .chooseFoodSection ul li label {
+        width: 90px;
+    }
+    .whatDoYouLikeSection .chooseFoodSection ul li label span {
+        width: 70px;
+        height: 70px;
+    }
+    .LoginContentWrap form h4,
+    .whereAreYouFrom h2 {
+        font-size: 28px;
+    }
+    .loginButtonSection {
+        padding: 0;
+    }
+}
+
+@media(max-width: 575px) {
+    .WrapcustomCheckBox ul {
+        flex-wrap: wrap;
+    }
+    .WrapcustomCheckBox ul li {
+        margin-bottom: 20px;
+    }
+    .licenseUploadSection ul li {
+        flex-direction: column;
+        width: 100%;
+        align-items: inherit;
+        justify-content: inherit;
+        margin-bottom: 25px;
+    }
+    .licenseUploadSection ul li p {
+        text-align: left;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .licenseUploadSection ul li span {
+        width: 100%;
+    }
+}

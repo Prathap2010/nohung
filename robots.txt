@@ -1,0 +1,26 @@
+User-agent: *
+
+Disallow : /admin
+
+Allow: /
+Allow: /login
+Allow: /register
+Allow: /my-account
+Allow: /search
+Allow: /search-kitchen
+Allow: /kitchen-detail
+Allow: /checkout
+
+Allow: https://nohung.com/manage-content/who-we-are
+Allow: https://nohung.com/manage-content/careers
+Allow: https://nohung.com/manage-content/report
+Allow: https://nohung.com/manage-content/contact-us
+Allow: https://nohung.com/manage-content/help-and-support
+Allow: https://nohung.com/manage-content/how-it-works-kitchen
+Allow: https://nohung.com/manage-content/rider-code-of-conduct
+Allow: https://nohung.com/manage-content/how-it-works-rider
+Allow: https://nohung.com/manage-content/privacy-policy
+Allow: https://nohung.com/manage-content/terms-and-conditions
+Allow: https://nohung.com/manage-content/sitemap
+
+Sitemap: https://nohung.com/sitemap.xml

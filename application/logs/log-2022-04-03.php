@@ -1,0 +1,40 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2022-04-03 03:33:24 --> 404 Page Not Found: Foodies/manage_content
+ERROR - 2022-04-03 13:06:37 --> 404 Page Not Found: 
+ERROR - 2022-04-03 20:20:59 --> 404 Page Not Found: Blog/wp_includes
+ERROR - 2022-04-03 20:21:00 --> 404 Page Not Found: Web/wp_includes
+ERROR - 2022-04-03 20:21:00 --> 404 Page Not Found: Wordpress/wp_includes
+ERROR - 2022-04-03 20:21:00 --> 404 Page Not Found: Website/wp_includes
+ERROR - 2022-04-03 20:21:00 --> 404 Page Not Found: Wp/wp_includes
+ERROR - 2022-04-03 20:21:00 --> 404 Page Not Found: News/wp_includes
+ERROR - 2022-04-03 20:21:01 --> 404 Page Not Found: 2015/wp_includes
+ERROR - 2022-04-03 20:21:01 --> 404 Page Not Found: 2016/wp_includes
+ERROR - 2022-04-03 20:21:01 --> 404 Page Not Found: 2017/wp_includes
+ERROR - 2022-04-03 20:21:01 --> 404 Page Not Found: 2018/wp_includes
+ERROR - 2022-04-03 20:21:02 --> 404 Page Not Found: Shop/wp_includes
+ERROR - 2022-04-03 20:21:02 --> 404 Page Not Found: Wp1/wp_includes
+ERROR - 2022-04-03 20:21:02 --> 404 Page Not Found: Test/wp_includes
+ERROR - 2022-04-03 20:21:02 --> 404 Page Not Found: Media/wp_includes
+ERROR - 2022-04-03 20:21:03 --> 404 Page Not Found: Wp2/wp_includes
+ERROR - 2022-04-03 20:21:03 --> 404 Page Not Found: Site/wp_includes
+ERROR - 2022-04-03 20:21:03 --> 404 Page Not Found: Cms/wp_includes
+ERROR - 2022-04-03 20:21:03 --> 404 Page Not Found: Sito/wp_includes
+ERROR - 2022-04-03 20:22:31 --> 404 Page Not Found: Blog/wp_includes
+ERROR - 2022-04-03 20:22:31 --> 404 Page Not Found: Web/wp_includes
+ERROR - 2022-04-03 20:22:31 --> 404 Page Not Found: Wordpress/wp_includes
+ERROR - 2022-04-03 20:22:32 --> 404 Page Not Found: Website/wp_includes
+ERROR - 2022-04-03 20:22:32 --> 404 Page Not Found: Wp/wp_includes
+ERROR - 2022-04-03 20:22:32 --> 404 Page Not Found: News/wp_includes
+ERROR - 2022-04-03 20:22:32 --> 404 Page Not Found: 2015/wp_includes
+ERROR - 2022-04-03 20:22:33 --> 404 Page Not Found: 2016/wp_includes
+ERROR - 2022-04-03 20:22:33 --> 404 Page Not Found: 2017/wp_includes
+ERROR - 2022-04-03 20:22:33 --> 404 Page Not Found: 2018/wp_includes
+ERROR - 2022-04-03 20:22:33 --> 404 Page Not Found: Shop/wp_includes
+ERROR - 2022-04-03 20:22:34 --> 404 Page Not Found: Wp1/wp_includes
+ERROR - 2022-04-03 20:22:34 --> 404 Page Not Found: Test/wp_includes
+ERROR - 2022-04-03 20:22:34 --> 404 Page Not Found: Media/wp_includes
+ERROR - 2022-04-03 20:22:34 --> 404 Page Not Found: Wp2/wp_includes
+ERROR - 2022-04-03 20:22:35 --> 404 Page Not Found: Site/wp_includes
+ERROR - 2022-04-03 20:22:35 --> 404 Page Not Found: Cms/wp_includes
+ERROR - 2022-04-03 20:22:35 --> 404 Page Not Found: Sito/wp_includes

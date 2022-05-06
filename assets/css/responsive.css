@@ -1,0 +1,489 @@
+@media screen and (max-width: 1399px){ 
+	div.today-order {
+       left: 70px;
+       top: 50px;
+    } 
+    div.order-summery {
+    	top: 20px;
+    }
+
+    section.hero-area11 .main-heading
+    {
+    	bottom: 14%;
+    	right: 11%; 
+    }	
+    section.hero-area13 .main-heading {
+    	bottom: 14%;
+    	right: 14%; 
+    }
+
+    div.container-fluid {
+	    padding: 0 50px;
+	}
+    div.menu-container .menu-meal .nav-item a {
+    	margin: 0px 25px;
+    }	
+    div.menu-container .select-meal-type {
+    	margin-top: -20px;
+	}
+	div.breakfast-monthly-content .right-part {
+        padding-left: 30px;
+	}
+	div.reviews-rating-modal .modal-content {
+     	width: 80%;
+     	margin: 0 auto;
+	}
+	div.reviews-rating-modal .customer-review-contents {
+	    width: 100%;
+	}
+	div.reviews-rating-modal .food-experience {
+        margin: 0 0 0 auto;
+        z-index: 1;
+	}
+	div.reviews-rating-modal .modal-body .food-review-img-container {
+	    left: 0;
+	    bottom: 140px;
+	}
+}
+@media screen and (max-width: 1199px){ 
+	div.foodsections .listOfFoodSection .foodSectionImg img.foodseleteddish {
+       height: 240px;
+ 	}
+ 	div.today-order {
+	    left: 20px;
+	    top: 20px;
+	    width: 650px;
+	    padding: 15px 25px;
+	}
+	div.order-summery {
+		left: 20px;
+	    top: 20px;
+	}
+	div.meal-type-container:first-child {
+		padding-right: 10px;
+	}
+	section.hero-area13 .image-container {
+	    height: 536px;
+	}
+	section.hero-area13 .image-container img {
+		height: 100%;
+	}
+	div.menu-container .menu-meal .nav-item a {
+    	margin: 0px 0px;
+	}
+	div.menu-container .select-meal-type ul li {
+    	margin-right: 10px;
+	}
+	  div.menu-container .select-meal-type ul li:last-child {
+	  	margin-right: 0;
+	  }
+	 div.breakfast-monthly-container {
+   	   justify-content: center;
+   	}   
+ 
+}
+@media screen and (max-width: 991px){
+	div.liketoday .container-fluid {
+	    padding: 0px 25px;
+	}
+	div.liketoday p {
+	    margin-top: -70px;
+	}
+	div.topHeaderSection .HeaderButtons ul li {
+	    margin: 0 0 0 10px;
+	}
+	div.topHeaderSection .HeaderButtons ul li.dropdown button {
+  	    margin-left: 10px;
+  	}    
+	div.HeaderButtons span.search-kitchen {
+    	padding: 14px 10px 14px 10px;
+    }
+    section.hero-area11 .image-container {
+	    height: 790px;
+	}
+	section.hero-area11 .image-container img {
+		height: 100%;
+	}
+	div.meal-type-container {
+	    flex-basis: 350px;
+	}
+	div.meal-type-container:first-child {
+		border-right: none;
+    	border-bottom: 1px solid #A7A8BC;
+    }
+    div.today-order {
+    	width: 400px;
+    }
+    section.hero-area11 .main-heading,
+    section.hero-area13 .main-heading {
+	    bottom: 20%;
+	    right: 6%;
+	}	
+	div.meal-type-container:first-child {
+	    padding-right: 0;
+	}
+	section.hero-area13 .main-heading {
+    	bottom: 15%;
+    	right: 10%;
+    }
+    div.container-fluid {
+	    padding: 0 30px;
+	}
+	div.kitchen-information .hero-area .main-img {
+		height: 500px;
+	}
+	div.kitchen-information .hero-area .main-img img {
+		height: auto;
+	}
+	div.reviews-rating-modal .modal-body .food-review-img-container {
+       position: static;
+       margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 767px){ 
+	div.foodsections .listOfFoodSection .foodSectionImg img.foodseleteddish {
+	    height: 350px;
+	}
+	div.liketoday .foodSelections ul li {
+    	margin-right: 7px;
+    }
+    div.topHeaderSection .HeaderButtons ul li:first-child {
+	    margin: 0 0 0 15px;
+	}
+	div.topHeaderSection .HeaderButtons ul li {
+		 margin: 0;
+	}
+	div.topHeaderSection .HeaderButtons ul li.dropdown button {
+  	    margin-left: 0px;
+  	}    
+div.HeaderButtons span.search-kitchen {
+    /*padding: 14px 0px 14px 10px;*/
+    display: inline-block;
+    width: 365px;
+    margin-top: 70px;
+    margin-left: -100px;
+    background:#fff;
+}
+    
+   div.kitchen-information .hero-logo img {
+    left: 20px;
+    width: 100px;
+    margin-top: -550px;
+}
+
+
+
+div.kitchen-information .photo-like {
+    right: 0px;
+    top: -55px;
+}
+    div.today-order {
+       padding: 5px 15px;
+    } 
+    section.hero-area11 .main-heading {
+	    right: 2%;
+	    width: 324px;
+	} 
+	section.hero-area11 .main-heading p {
+  		font-size: 24px; 
+  	}
+  	.kitchenscuisine #rating {
+	    width: 97%;
+	}
+	section.hero-area13 .main-heading {
+	    right: 5%;
+	    width: 278px;
+	} 
+	section.hero-area13 .main-heading p {
+  		font-size: 24px; 
+  	}
+  	div.container-fluid {
+	    padding: 0 10px;
+	}
+	div.menu-container .select-meal-type { 
+		margin-top: 0;
+	}
+	div.packagemodal .modal-dialog {
+	    max-width: 80%;
+	}			
+}
+
+@media screen and (max-width: 600px){ 
+	div.liketoday p {
+	    margin-top: 0px;
+	}
+	section.hero-area11 .image-container,
+	section.hero-area13 .image-container {
+	    height: 460px;
+	}
+	section.hero-area11 .main-heading p,
+	section.hero-area13 .main-heading p {
+	    font-size: 20px;
+	}
+
+	section.hero-area11 .main-heading,
+	section.hero-area13 .main-heading {
+ 	    width: 270px;
+ 	    bottom: 18%;
+	}
+	div.today-order,
+	div.order-summery {
+		left: 0;
+    	top: 370px;
+    	width: 100%;
+    }
+    div.liketoday {
+        margin-top: 0px;
+	}
+	div.meal-type-container {
+	    flex-basis: 100%;
+	}
+	section.hero-area13 {
+	    margin-top: 650px;
+	}
+	div.kitchen-information .kitchenNameRating {
+       justify-content: center;
+       margin-top: -210px;
+   	}
+   	div.kitchen-information .delivery-rating {
+    float: right;
+    width: 110px;
+    border: 2px solid #FEDF7C;
+    border-radius: 22px;
+    text-align: center;
+    padding: 0px 0px;
+    box-shadow: 0px 2px 19px #A29E8929;
+    margin-bottom: 10px;
+}
+
+
+   	
+   	div.kitchen-information .delivery-rating .review {
+    font-size: 12px;
+    text-align:left;
+}
+   	
+   	
+   	div.kitchen-information .delivery-rating .rate-img img {
+    width: 15px;
+    height: 15px;
+}
+
+   	div.kitchen-information .kitchenNameRating .text-right {
+    	text-align: right !important;
+	}
+	div.kitchen-information .hero-area .main-img {
+		height: 400px;
+	}
+	div.kitchen-information .photo-like {
+		right: 20px;
+	}
+	div.kitchen-information .hero-logo {
+        left: 20px;
+    }
+    div.breakfast-monthly-content {
+    	padding: 40px 10px;
+    }
+    div.customer-review-content .food-status li {
+       margin-right: 20px;
+    }
+    div.customer-review-content .food-status span {
+	    margin-left: 5px;
+	}
+	div.packagemodal .modal-dialog .modal-body,
+	div.packagemodal .modal-dialog .modal-header {
+	    padding: 10px 10px 1rem 10px;
+	}
+	div.packagemodal .modal-body .nav-pills .nav-link {
+ 	    padding: 0 14px;
+	}
+	div.packagemodal .package-order-per-week .order-for-week {
+ 	   font-size: 20px;	
+ 	}   
+}
+
+@media screen and (max-width: 500px){ 
+	div.HeaderButtons {
+		font-size: 10px;
+	}
+	div.kitchen-information .hero-area .main-img {
+	    height: 350px;
+	}
+	div.breakfast-menu-container .breakfast-menu-item {
+        justify-content: center;
+    } 
+    div.breakfast-monthly-content .left-part {
+    	width: 100%;
+    } 
+    div.breakfast-monthly-content .right-part {
+    	width: 100%;
+    	padding-left: 0;
+    }
+    div.reviews-rating-modal .modal-content {
+	    padding: 10px 0px;
+	}
+	div.reviews-rating-modal .modal-title {
+        font-size: 26px;   
+    } 
+    div.customer-review-content .food-status li {
+	    margin-right: 5px;
+	}
+	div.customer-review-content .food-status span {
+	    margin-left: 0px;
+	}  
+	div.reviews-rating-modal .food-experience .heading {
+        font-size: 20px; 	
+    } 
+    div.packagemodal .modal-content {
+    	left: 5%;
+    	width:342px;
+    }
+    div.packagemodal .modal-body li.nav-item {
+	    font-size: 16px;   
+	}
+	div.packagemodal .modal-body .package-everyday-list-menu-content .heading {
+	    font-size: 14px;
+	    margin-left:10px;
+	}
+	div.packagemodal .modal-body .package-everyday-list-menu-content .description {
+    	font-size: 12px;
+    	margin-left:10px;
+    }
+    div.packagemodal .package-order-per-week .order-for-week {
+	    font-size: 16px;
+	    margin-left:10px;
+	}	
+	div.packagemodal .package-order-per-week .btn-select-this-package {
+       font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 450px){ 
+	div.liketoday .foodSelections ul {
+	    clear: both;
+	}
+	div.liketoday .foodSelections ul li {
+	    margin-right: 4px;
+	    font-size: 14px;
+	}
+	div.liketoday .foodSelections ul li label {
+        padding: 7px 10px 7px 7px;
+    }
+    div.liketoday .foodSelections ul li label span {
+        width: 25px;
+    	height: 25px; 
+    }
+    div.liketoday .foodSelections ul li label span svg, .liketoday .foodSelections ul li label span img {
+	    width: 17px;
+	}
+	.kitchenscuisine #rating {
+	    width: 100%;
+	}
+	div.kitchen-information .select-meal-plan .select-plan .nav-item {
+	    margin-right: 5px;
+	}
+	div.kitchen-information .hero-area .main-img {
+	    height: 300px;
+	}
+	div.menu-container .menu-meal .nav-item a {
+		padding: 10px 15px 16px 15px;
+	}	
+	div.reviews-rating-modal .modal-content {
+    	width: 95%;
+    }
+    div.packagemodal .modal-body .package-everyday-list-menu-content {
+    	display: inline-block;	
+    	width: 100%;
+    }	
+    div.packagemodal .package-everyday-list-menu-content .right-part {
+	    text-align: right;
+	}  
+	div.packagemodal .modal-body li.nav-item:last-child {
+    	border-right:2px solid #FCC647;
+	} 
+	div.packagemodal .modal-body li.nav-item {
+	    display: block;
+	    width: 100%;
+	    border: 2px solid #FCC647;
+	    margin: 5px 0;
+	    border-radius: 5px;
+	    padding: 0;
+	}
+	div.packagemodal .modal-body .nav-pills .nav-link {
+	    padding: 7px 14px;
+	}
+	div.packagemodal .modal-body .nav-pills .nav-link.active, .packagemodal .modal-body .nav-pills .show>.nav-link {
+	    color: #000;
+	    background-color: #fff;
+	}
+	div.packagemodal .modal-body .nav-pills .nav-link.padding-left0 {
+	    padding-left: 14px !important;
+	}
+	div.packagemodal .package-order-per-week .right-part {
+	    display: inline-block;
+	    text-align: right;
+	    width: 100%;
+	    margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 420px){ 
+	div.foodsections .listOfFoodSection .foodSectionImg img.foodseleteddish {
+	    height: 270px;
+	}
+	div.kitchen-information .select-meal-plan .select-plan .nav-link {
+       width: 110px;
+    }   
+}
+
+@media screen and (max-width: 320px){
+ 	div.liketoday .foodSelections ul {
+       display: inline-block;
+       width: 100%;
+    }
+    div.foodsections .listOfFoodSection .foodSectionImg img.foodseleteddish {
+	    height: 200px;
+	}
+	div.kitchen-information .select-meal-plan .select-plan .nav-link {
+	    width: 90px;
+	} 
+	div.kitchen-information .select-meal-plan .discount-code-content {
+        justify-content: center;
+    }
+    div.menu-container .menu-meal .nav-item a {
+	    padding: 10px 2px 16px 2px;
+	} 
+	div.kitchen-information .select-meal-type ul li label {
+        padding: 4px 7px 4px 7px;   
+    } 
+    div.kitchen-information .breakfast-menu-item .breakfast-name {
+    	margin-left: 0 !important; 
+    	clear: both;
+	}
+	div.kitchen-information .hero-logo img {
+		width: 60px;
+		height: 60px;
+	}
+	div.kitchen-information .hero-logo {
+        bottom: -26px;
+    } 
+    div.exapand-food-review-btn-container {
+	    width: 15%;
+	} 
+	div.customer-review-content .food-status li {
+      display: block;
+      margin-bottom: 10px;
+	}
+	div.customer-review-content .food-status span {
+		float: right;
+	}
+	div.reviews-rating-modal .food-experience {
+        padding: 20px 15px;  
+    }
+    div.reviews-rating-modal .food-experience .right-part label {
+	    display: inline-block;
+	    padding: 5px 5px;
+	}    
+}
+

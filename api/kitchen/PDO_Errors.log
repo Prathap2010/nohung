@@ -1,0 +1,262 @@
+2021-07-30 05:07:36 :: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'email' cannot be null: 513
+2021-07-30 05:07:49 :: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'contactname' cannot be null: 513
+2021-08-01 07:08:07 :: SQLSTATE[HY000]: General error: 1267 Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '=': 459
+2021-08-07 11:08:01 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'kitchen_name' in 'field list': 685
+2021-08-07 11:08:48 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'kitchen_name' in 'field list': 685
+2021-08-07 11:08:15 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'kitchen_name' in 'field list': 685
+2021-08-07 11:08:02 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'kitchen_name' in 'field list': 685
+2021-08-07 11:08:10 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'kitchen_name' in 'field list': 685
+2021-08-07 11:08:32 :: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined: 822
+2021-08-07 11:08:01 :: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined: 822
+2021-08-07 11:08:12 :: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined: 822
+2021-08-07 11:08:27 :: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined: 822
+2021-08-07 11:08:34 :: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined: 822
+2021-08-07 11:08:48 :: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined: 822
+2021-08-07 11:08:34 :: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined: 822
+2021-08-07 11:08:35 :: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined: 822
+2021-08-07 11:08:11 :: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined: 822
+2021-08-07 11:08:18 :: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined: 822
+2021-08-20 05:08:47 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'CAST((SELECT AVG(fd.rating) FROM feedback as fd WHERE fd.kitchen_id=user.id) AS ' at line 2: 340
+2021-10-06 09:10:24 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'k.kitchenname' in 'field list': 340
+2021-10-06 09:10:12 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'oi.delivery_date' in 'field list': 340
+2021-10-06 12:10:21 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'oi.orderdate' in 'field list': 340
+2021-10-06 04:10:16 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type' in 'field list': 340
+2021-10-06 04:10:57 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type' in 'field list': 340
+2021-10-06 04:10:11 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type' in 'field list': 340
+2021-10-06 04:10:07 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as 'Dinner'
+                                                        END) 
+    ' at line 6: 340
+2021-10-06 04:10:24 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type' in 'field list': 340
+2021-10-06 04:10:17 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type' in 'field list': 340
+2021-10-06 04:10:59 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type' in 'field list': 340
+2021-10-06 04:10:29 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type' in 'field list': 340
+2021-10-06 04:10:21 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type' in 'field list': 340
+2021-10-06 04:10:23 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'typeid' in 'where clause': 340
+2021-10-06 04:10:41 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'typeid' in 'where clause': 340
+2021-10-07 07:10:03 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'oi.createddate' in 'where clause': 340
+2021-10-07 07:10:56 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'oi.createddate' in 'where clause': 340
+2021-10-07 07:10:34 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'oi.createddate' in 'where clause': 340
+2021-10-08 03:10:58 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'kitchen_id' in 'field list': 513
+2021-10-08 03:10:47 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'kitchen_id' in 'field list': 513
+2021-10-08 04:10:49 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '=1' at line 1: 340
+2021-10-08 05:10:48 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DECIMAL(2,1)) as totalrating
+                FROM user as u WHERE u.id = '29'' at line 2: 340
+2021-10-08 07:10:02 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'oi.delivery_date' in 'group statement': 340
+2021-10-12 12:10:58 :: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'defailtdishitem' cannot be null: 513
+2021-10-12 12:10:40 :: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'defailtdishitem' cannot be null: 513
+2021-10-12 12:10:58 :: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'defailtdishitem' cannot be null: 513
+2021-10-12 03:10:27 :: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'itemname' cannot be null: 513
+2021-10-12 03:10:49 :: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'itemname' cannot be null: 513
+2021-10-12 03:10:48 :: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'itemname' cannot be null: 513
+2021-10-12 03:10:54 :: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'itemname' cannot be null: 513
+2021-10-12 03:10:48 :: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'itemname' cannot be null: 513
+2021-10-12 03:10:50 :: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'itemname' cannot be null: 513
+2021-10-12 03:10:32 :: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'itemname' cannot be null: 513
+2021-10-14 03:10:09 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'oi.itemstatus' in 'field list': 340
+2021-10-18 05:10:46 :: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'amount' cannot be null: 513
+2021-12-21 09:12:01 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'kwp.id DESC' at line 4: 340
+2021-12-27 12:12:56 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE id='13' AND userid = '24'' at line 1: 340
+2021-12-31 02:12:41 :: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'itemname' cannot be null: 513
+2021-12-31 02:12:41 :: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'itemname' cannot be null: 513
+2022-01-03 09:01:41 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-01-06 05:01:14 :: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'itemname' cannot be null: 513
+2022-01-06 05:01:38 :: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'itemname' cannot be null: 513
+2022-01-07 02:01:42 :: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'itemname' cannot be null: 513
+2022-01-07 02:01:42 :: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'itemname' cannot be null: 513
+2022-01-07 03:01:28 :: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'itemname' cannot be null: 513
+2022-01-07 03:01:28 :: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'itemname' cannot be null: 513
+2022-02-15 12:02:05 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-02-15 12:02:09 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-02-15 12:02:19 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-02-15 12:02:10 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-02-15 12:02:19 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-02-15 12:02:20 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-02-15 12:02:27 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-03-30 01:03:49 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-03-30 06:03:54 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-03-30 06:03:20 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-03-30 06:03:59 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-03-31 04:03:53 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-03-31 04:03:00 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:57 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:01 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:01 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:02 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:02 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:05 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:06 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:06 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:25 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:25 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:32 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:33 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:33 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:43 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:43 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:44 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:44 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:44 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:44 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:46 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:47 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:47 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:47 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:58 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:59 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:59 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:01 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:02 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:02 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:03 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:00 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:04 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:05 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:05 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:07 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:07 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:07 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:11 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:12 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:12 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:12 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-02 01:04:12 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-04 12:04:04 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-04 01:04:25 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-04 01:04:51 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-04 01:04:06 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-04 03:04:51 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-04 03:04:06 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-04 03:04:09 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-04-04 03:04:28 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifieddate' in 'field list': 685
+2022-05-02 11:05:45 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-02 11:05:48 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-02 11:05:05 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-02 11:05:25 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-02 11:05:29 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:27 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:32 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:38 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:45 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:50 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:55 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:00 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:05 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:10 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:15 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:20 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:25 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:30 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:35 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:40 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:11 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:17 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:22 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:27 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:32 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:37 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:42 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:47 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:52 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:57 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:02 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:07 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:12 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:17 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:22 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:27 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:32 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:37 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:42 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:43 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:47 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:53 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:53 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:25 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:32 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:37 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:42 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:47 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:52 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:57 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:02 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:07 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:12 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:17 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:22 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:27 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:32 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:37 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:42 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:48 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:53 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:57 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:02 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:07 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:12 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:17 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:22 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:27 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:32 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:38 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:43 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:48 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:53 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:58 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:03 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:08 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:13 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:18 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:23 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:28 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:33 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:38 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:43 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:48 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:53 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:48 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:53 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:58 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:08 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:10 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:11 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:23 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:28 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:33 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:37 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:37 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:46 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:51 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:55 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:00 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:06 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:10 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:15 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:21 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:26 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:31 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:36 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:41 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:46 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:51 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:56 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:01 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:06 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:09 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:11 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:16 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:21 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:26 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:31 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:37 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:41 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:42 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:46 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:51 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:56 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:01 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:07 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:12 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:16 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:59 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:54 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340
+2022-05-04 07:05:26 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 340

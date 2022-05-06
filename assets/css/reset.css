@@ -1,0 +1,90 @@
+.container-fluid {
+	padding: 0 140px;
+}
+
+.lightbrown {
+    color: #CE543D;
+    font-size:13px;
+}
+.bold {
+    font-weight: bold;
+}
+.white {
+	color: #fff;
+}
+.cementgray {
+    color: #9e9e9e !important;
+}
+.foodiyellow {
+    color: #FCC647;
+}
+.orderyellow {
+    color: #FFA451;
+}
+.lightgreen {
+	color: #7EDABF; 
+}
+.full-width {
+    width: 100% !important;
+}
+ul,ol {
+    list-style: none;
+}
+.floatleft {
+	float: left;
+}
+.floatright {
+	float: right;
+}
+.clearfix {
+    clear: both;
+}
+
+a,a:hover {
+    text-decoration: none;
+}
+
+.padding-bottom0 {
+    padding-bottom: 0 !important;
+}
+.padding-left0 {
+    padding-left: 0 !important;
+}
+.margin-bottom0 {
+    margin-bottom: 0 !important;
+}
+
+button,button:focus,input {
+	outline: none;
+}
+
+.margin-left10 {
+    margin-left: 10px;
+}
+.margin-left5 {
+    margin-left: 5px;
+}
+
+.margin-right5 {
+    margin-right: 5px;
+}
+.margin-right15 {
+    margin-right: 15px;
+}
+.margin-top35 {
+    margin-top: 35px;
+}
+
+.border-dashed-bottom {
+    border-bottom: 1px dashed;
+}
+.border-color-yellow {
+    border-color: #FCC647;
+}
+
+.visibility-visible {
+    visibility: visible !important;
+}
+.visibility-hidden {
+    visibility: hidden !important;
+}
